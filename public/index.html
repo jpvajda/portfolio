@@ -1,43 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>John P Vajda: Portfolio</title>
+  <link href="portfoliopage.css" rel="stylesheet" type="text/css" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<!-- new relic script for data tracking -->
+  <script src="newrelic.js"></script>
+</head>
+
+<!--  Content  -->
+<main>
+
+  <nav id=navbar class="navbar">
+    <li><a href="#summary">/Summary</a></li>
+    <li><a href="#projects">/Projects</a></li>
+    <li><a href="#references">/References</a></li>
+    <li><a id="contactModal">/Contact</a></li>
+    <li><a href="https://jpv-blog.netlify.app/">/Blog</a></li>
+  </nav>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <section id="Modal">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Send me your info!</h2>
+          </div>
+
+          <div class="modal-body">
+            <form  name="contact" data-netlify ="true" id="contact-form" method="post">
+              <div class="form-div">
+                <input id="name" type="text" placeholder="Enter name" required>
+              </div>
+              <div class="form-div">
+                <input id="email" type="email" placeholder="Enter email address" required>
+              </div>
+
+              <div class="form-div">
+                <textarea id="comment" name="comment" type="text" rows="5" cols="33">
+                  </textarea>
+              </div>
+              <div class="submit"> <input type="submit" value="Submit"></div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <h3>Thank you!</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="summary" class="summary">
+
+      <h1 class="summary-title">{ Summary }</h1>
+      <div class="summary-text">
+        <p> Hello! I am product and engineering leader who loves to code. I have 14 years of technical 
+          project and technical product management experience, and over the last 4 years been
+          investing heavily in sharping my developer / engineering skill set.
+
+          <p class="goal">My Mission: To empower makers and creators to build amazing things that 
+            will change the world.</p>
+
+          <p>To say I love empowering developers to build cool things is an understatement.
+          Great documentation, amazing code libraries, and awesome developer support enables
+          creative people to do amazing things with your software. I love seeing a
+          community grow and use a product to solve their own developer challenges.</p>
+
+          <p>I enjoy talking to customers and users about products and seeing their eyes and brains
+            light up when a particular solution solves a challenge they are facing.
+            Being in service to people, and making their lives easier, brings me joy.</p>
+
+          <p>I believe in open source, accessibility, transparency in code, and clarity in design and
+            documentation. I possess an insatiable appetite to learn, and ability to
+            learn quickly and love for coding that goes beyond words.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h1 class="project-title">{ Projects }</h1>
+
+      <div class="project-tile">
+        <a href="https://codepen.io/jpvajda/pen/eYYrOJe"> <img class="code-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+            target=_blank></a>
+        <h3>FCC: Tribute Page</h3>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://codepen.io/jpvajda/pen/BaaxybB"> <img class="code-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+            target=_blank></a>
+        <h3>FCC:Survey Form</h3>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://codepen.io/jpvajda/pen/GRRdwXv"> <img class="code-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+            target=_blank></a>
+        <h3>FCC:Product Landing</h3>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://codepen.io/jpvajda/pen/xxxjoVN"> <img class="code-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+            target=_blank></a>
+        <h3>FCC:Technical Documentation</h3>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://codepen.io/jpvajda/pen/ExaxeYL"> <img class="code-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+            target=_blank></a>
+        <h3>FCC: Quote Machine </h3>
+      </div>
+      <div class="project-tile">
+        <a href="https://codepen.io/jpvajda/pen/wvBaWBx"> <img class="code-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+            target=_blank></a>
+        <h3>FCC: Markdown Previewer </h3>
+      </div>
+      <div class="project-tile">
+          <a href="https://codepen.io/jpvajda/pen/LYEpLvj"> <img class="code-image"
+              src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+              target=_blank></a>
+          <h3>FCC: Drum Machine </h3>
+        </div>
+        <div class="project-tile">
+          <a href="https://codepen.io/jpvajda/pen/zYxKpbG"> <img class="code-image"
+              src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+              target=_blank></a>
+          <h3>FCC: Pomodoro Clock </h3>
+        </div>
+        <div class="project-tile">
+          <a href="https://glitch.com/@jpvajda"> <img class="code-image"
+              src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+              target=_blank></a>
+          <h3>FCC: API and Microservice Projects </h3>
+        </div>
+        <div class="project-tile">
+          <a href="https://glitch.com/@jpvajda"> <img class="code-image"
+              src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+              target=_blank></a>
+          <h3>FCC: Information Security and QA Projects </h3>
+        </div>
+        <div class="project-tile">
+          <a href="https://github.com/jpvajda/python/tree/master/PythonGames"> <img class="code-image"
+              src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+              target=_blank></a>
+          <h3>Python Games </h3>
+        </div>
+      </div>
+      <div class="project-tile">
+        <a href="https://jpvajda-github-io.netlify.com/.netlify/functions/lambdafunction"> <img class="code-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/code-image.png" alt="CodeImage"
+            target=_blank></a>
+        <h3> Netlify Lambda Function </h3>
+      </div>
+
+    </section>
+
+    <section id="references" class="references">
+      <h1 class="references-title">{ References }</h1>
+
+      <div class="references-tile">
+        <a href="https://www.freecodecamp.org/jpvajda"> <img class="link-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/link-image.png" alt="LinkImage"
+            target=_blank></a>
+        <h3>Free Code Camp</h3>
+      </div>
+
+      <div class="references-tile">
+        <a href="https://github.com/jpvajda"> <img class="link-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/link-image.png" alt="LinkImage"
+            target=_blank></a>
+        <h3>Github</h3>
+      </div>
+
+      <div class="references-tile">
+        <a href="https://gitlab.com/johnpvajda"> <img class="link-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/link-image.png" alt="LinkImage"
+            target=_blank></a>
+        <h3>Gitlab</h3>
+      </div>
+
+      <div class="references-tile">
+        <a href="https://www.codewars.com/users/kratos0"> <img class="link-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/link-image.png" alt="LinkImage"
+            target=_blank></a>
+        <h3>CodeWars</h3>
+      </div>
+
+      <div class="references-tile">
+        <a href="https://www.linkedin.com/in/johnpvajda"> <img class="link-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/link-image.png" alt="LinkImage"
+            target=_blank></a>
+        <h3>Linkedin</h3>
+      </div>
+
+      <div class="references-tile">
+        <a href="https://glitch.com/@jpvajda"> <img class="link-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/link-image.png" alt="LinkImage"
+            target=_blank></a>
+        <h3>Glitch</h3>
+      </div>
+
+
+  
+
+    </section>
+
+    <section id="certifications" class="certs">
+      <h1 class="certs-title">{ Certifications }</h1>
+
+      <div class="certs-tile">
+        <a href="https://www.freecodecamp.org/certification/jpvajda/responsive-web-design">
+          <img class="cert-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/certification-image.png" alt="CertImage"
+            target=_blank></a>
+        <h3>FCC: Responsive Web Design Certification</h3>
+      </div>
+
+      <div class="certs-tile">
+        <a href="https://www.freecodecamp.org/certification/jpvajda/javascript-algorithms-and-data-structures">
+          <img class="cert-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/certification-image.png" alt="CertImage"
+            target=_blank></a>
+        <h3>FCC: JavaScript Algorithms and Data Structures Certification</h3>
+      </div>
+
+      <div class="certs-tile">
+        <a href="https://www.freecodecamp.org/certification/jpvajda/front-end-libraries">
+          <img class="cert-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/certification-image.png" alt="CertImage"
+            target=_blank></a>
+        <h3>FCC: Front End Libraries Certification</h3>
+      </div>
+
+      <div class="certs-tile">
+        <a href="https://www.freecodecamp.org/certification/jpvajda/apis-and-microservices">
+          <img class="cert-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/certification-image.png" alt="CertImage"
+            target=_blank></a>
+        <h3>FCC: APIs and Microservices</h3>
+      </div>
+
+      <div class="certs-tile">
+        <a href="https://www.freecodecamp.org/certification/jpvajda/information-security-and-quality-assurance">
+          <img class="cert-image"
+            src="https://portfolio-images123456789.s3-us-west-1.amazonaws.com/certification-image.png" alt="CertImage"
+            target=_blank></a>
+        <h3>FCC: Information Security and Quality Assurance</h3>
+      </div>
+    </section>
+
+    <!-- javascript sources -->
+    <script src="portfoliopage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
   </body>
+</main>
+
 </html>

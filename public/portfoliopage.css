@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(178, 0, 0, 0.6);
+}
+
+main {
+    text-align: center;
+    display: inline block;
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(2, 3, 12, 0.9)
+}
+
+a {
+    color: rgba(178, 0, 0, 0.9);
+}
+
+p {
+    line-height: 1.7em;
+}
+
+p+p {
+    margin-top: 12px;
+}
+
+.goal {
+    color: rgba(178, 0, 0, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 0px 8px 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.summary {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: 60px 0px 40px 0px;
+    grid-template-areas: "title" "cell1";
+}
+
+.summary-title {
+    display: grid;
+    grid-area: title;
+    margin: 20px 0px 20px 0px;
+}
+
+.summary-text {
+    display: grid;
+    grid-area: cell1;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    width: 60%;
+    justify-self: center;
+}
+
+.code-image {
+    width: 150px;
+    height: 150px;
+}
+
+.link-image {
+    width: 50px;
+    height: 50px;
+}
+
+.cert-image {
+    width: 75px;
+    height: 75px;
+}
+
+.projects {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title title title title" "cell1 cell2 cell3 cell4";
+}
+
+.project-title {
+    display: grid;
+    grid-area: title;
+    margin-top: 20px;
+}
+
+.project-tile {
+    display: grid;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(10, 9, 9, 0.6);
+    width: auto;
+    height: auto;
+    padding: 12px 4px 12px 4px;
+    margin: 40px 12px 40px 12px;
+    border: dotted 1px rgba(178, 0, 0, 0.6);
+}
+
+.references {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title title title title title" "cell1 cell2 cell3 cell4 cell5"
+}
+
+.references-title {
+    display: grid;
+    grid-area: title;
+    margin-top: 20px;
+}
+
+.references-tile {
+    display: grid;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(10, 9, 9, 0.6);
+    width: auto;
+    height: auto;
+    padding: 12px 4px 12px 4px;
+    margin: 40px 12px 40px 8px;
+    border: dotted 1px rgba(178, 0, 0, 0.6);
+}
+
+.certs {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title title title title title" "cell1 cell2 cell3 cell4 cell5"
+}
+
+.certs-title {
+    display: grid;
+    grid-area: title;
+    margin-top: 20px;
+}
+
+.certs-tile {
+    display: grid;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(10, 9, 9, 0.6);
+    width: auto;
+    height: auto;
+    padding: 12px 4px 12px 4px;
+    margin: 40px 12px 40px 8px;
+    border: dotted 1px rgba(178, 0, 0, 0.6);
+}
+
+/* modal CSS */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgba(178, 0, 0, 0.6);
+    color: white;
+}
+
+.modal-body {
+    display: flex;
+    padding: 2px 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: rgba(178, 0, 0, 0.6);
+    color: white;
+}
+
+/* Contact Form CSS */
+
+.form-div { 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+
+.email { 
+    unicode-bidi:bidi-override; 
+    direction: rtl;
+}
+
+input[type=email] {
+    width: 60%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px dotted rgba(4, 7, 40, 0.9);
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px dotted rgba(4, 7, 40, 0.9);
+}
+
+::placeholder {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+textarea {
+    width: 80%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border: 3px dotted rgba(4, 7, 40, 0.9);
+}
+
+input[type=submit] {
+    background-color: rgb(0, 0, 0, 0.9);
+    color: white;
+    border: 2px solid rgba(178, 0, 0, 0.6);
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "title" "cell1";
+    }
+    .project-title {
+        display: grid;
+        grid-area: title;
+        margin-top: 20px;
+    }
+    .project-tile {
+        display: grid;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(178, 0, 0, 0.6);
+        width: auto;
+        height: auto;
+        padding: 2px 16px;
+        margin: 40px 12px 40px 12px;
+        border: dotted 1px rgba(178, 0, 0, 0.6);
+    }
+    .references {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "title" "cell1"
+    }
+    .references-title {
+        display: grid;
+        grid-area: title;
+        margin-top: 20px;
+    }
+    .references-tile {
+        display: grid;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(178, 0, 0, 0.6);
+        width: auto;
+        height: 100px;
+        padding: 12px 4px 12px 4px;
+        margin: 40px 12px 40px 8px;
+        border: dotted 1px rgba(178, 0, 0, 0.6);
+    }
+    .certs {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "title" "cell1"
+    }
+    .certs-title {
+        display: grid;
+        grid-area: title;
+        margin-top: 20px;
+    }
+    .certs-tile {
+        display: grid;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(178, 0, 0, 0.6);
+        width: auto;
+        height: 160px;
+        padding: 12px 4px 12px 4px;
+        margin: 40px 12px 40px 8px;
+        border: dotted 1px rgba(178, 0, 0, 0.6);
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .summary-title {
+        display: grid;
+        grid-area: title;
+        margin: 80px 0px 20px 0px;
+    }
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 1px;
+    }
+}
