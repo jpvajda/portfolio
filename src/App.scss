@@ -1,12 +1,41 @@
 @import "~bootstrap/scss/bootstrap";
 
-/* The following block can be included in a custom.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-/* make the customizations */
-$theme-colors: (
-    "info": tomato,
-    "danger": teal
-);
+.card {
+  width: "18rem";
+}
 
+.cardTitle {
+  color: rgba(0, 0, 0, 0.9);
+}
 
+.cardText {
+  color: rgba(0, 0, 0, 0.9);
+}
 
+.App {
+  text-align: center;
+  display: inline block;
+  font-family: "Roboto Mono", monospace;
+  //   color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(2, 3, 12, 0.9);
+}
+
+.projects {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title title title" "cell1 cell2 cell3 cell4";
+}
+
+.project-title {
+  display: grid;
+  grid-area: title;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 20px;
+}

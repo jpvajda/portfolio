@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import MyCarousel from './components/MyCarousel';
+import codeImage from './assets/code-image.png'
 
 
 function App() {
@@ -21,15 +22,14 @@ function App() {
       <MyCarousel></MyCarousel>
       <section className="projects">
         <h1 className="project-title">Projects</h1>
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
+            <Card.Title className="cardTitle">FCC: Tribute Page</Card.Title>
+            <Card.Text className="cardText">
+              A Simple HTML page using basic CSS.
     </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary" href="https://codepen.io/jpvajda/pen/eYYrOJe">CodePen</Button>
           </Card.Body>
         </Card>
       </section>
