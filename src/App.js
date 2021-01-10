@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import ControlledCarousel from './components/ControlledCarousel';
+import MyCarousel from './components/MyCarousel';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         {/* new relic script for data tracking */}
         <script src="newrelic.js"></script>
       </Helmet>
-      <ControlledCarousel.js></ControlledCarousel.js>
+      <MyCarousel></MyCarousel>
       <section className="projects">
         <h1 className="project-title">Projects</h1>
         <Card style={{ width: '18rem' }}>
