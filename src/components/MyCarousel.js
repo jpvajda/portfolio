@@ -11,7 +11,7 @@ export default class MyCarousel extends Component {
       <Carousel>
         <Carousel.Item>
           <img
-            className="carousel"
+            className="carouselCaption"
             src="holder.js/800x400?text=First slide&bg=373940"
             alt="First slide"
           />
@@ -24,20 +24,20 @@ export default class MyCarousel extends Component {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="carousel"
+            className="carouselCaption"
             src="holder.js/800x400?text=Second slide&bg=282c34"
             alt="Third slide"
           />
 
           <Carousel.Caption>
-            <h3>My Mission</h3>
+            <h3>My mission</h3>
             <p>To empower makers and creators to build amazing things that
                 will change the world.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="carousel"
+            className="carouselCaption"
             src="holder.js/800x400?text=Third slide&bg=20232a"
             alt="Third slide"
           />

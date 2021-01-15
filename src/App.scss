@@ -6,7 +6,10 @@
 }
 
 .card {
-  width: "18rem";
+  width: auto;
+  height: auto;
+  padding: 12px 4px 12px 4px;
+  margin: 40px 12px 40px 12px;
 }
 
 .cardTitle {
@@ -15,13 +18,14 @@
 
 .cardText {
   color: rgba(0, 0, 0, 0.9);
+  text-align: center;
 }
 
 .App {
   text-align: center;
+  display: grid;
   display: inline block;
   font-family: "Roboto Mono", monospace;
-  //   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(2, 3, 12, 0.9);
 }
 
@@ -33,17 +37,17 @@
   grid-template-areas: "title title title title" "cell1 cell2 cell3 cell4";
 }
 
-.project-title {
+.projectTitle {
   display: grid;
   grid-area: title;
   color: rgba(255, 255, 255, 0.9);
   margin-top: 20px;
 }
 
-.carousel {
+.carouselCaption {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title title title title" "cell1 cell2 cell3 cell4";
-  height: 80px;
+  height: 400px;
 }

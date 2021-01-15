@@ -21,15 +21,36 @@ function App() {
       </Helmet>
       <MyCarousel></MyCarousel>
       <section className="projects">
-        <h1 className="project-title">Projects</h1>
+        <h1 className="projectTitle">Projects</h1>
         <Card className="card">
           <Card.Img variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC: Tribute Page</Card.Title>
             <Card.Text className="cardText">
-              A Simple HTML page using basic CSS.
+              A aimple HTML page using basic CSS.
     </Card.Text>
             <Button variant="primary" href="https://codepen.io/jpvajda/pen/eYYrOJe">CodePen</Button>
+          </Card.Body>
+        </Card>
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Survey Form</Card.Title>
+            <Card.Text className="cardText">
+              A aimple survey form.
+    </Card.Text>
+            <Button variant="primary" href="https://codepen.io/jpvajda/pen/BaaxybB">CodePen</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Product Landing</Card.Title>
+            <Card.Text className="cardText">
+              A simple landing page.
+    </Card.Text>
+            <Button variant="primary" href="https://codepen.io/jpvajda/pen/GRRdwXv">CodePen</Button>
           </Card.Body>
         </Card>
       </section>
