@@ -27,17 +27,18 @@ function App() {
           <Card.Body>
             <Card.Title className="cardTitle">FCC: Tribute Page</Card.Title>
             <Card.Text className="cardText">
-              A aimple HTML page using basic CSS.
+              A simple HTML page using basic CSS.
     </Card.Text>
             <Button variant="primary" href="https://codepen.io/jpvajda/pen/eYYrOJe">CodePen</Button>
           </Card.Body>
         </Card>
+
         <Card className="card">
           <Card.Img variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Survey Form</Card.Title>
             <Card.Text className="cardText">
-              A aimple survey form.
+              A simple survey form.
     </Card.Text>
             <Button variant="primary" href="https://codepen.io/jpvajda/pen/BaaxybB">CodePen</Button>
           </Card.Body>
