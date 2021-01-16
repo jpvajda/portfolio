@@ -15,7 +15,7 @@ export default class MyCarousel extends Component {
             src="holder.js/800x400?text=First slide&bg=373940"
             alt="First slide"
           />
-          <Carousel.Caption>
+          <Carousel.Caption >
             <h3>Hello!</h3>
             <p>Hello! I am product and engineering leader who loves to code. I have 14 years of technical
             project and technical product management experience, and over the last 4 years been

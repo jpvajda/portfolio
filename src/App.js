@@ -23,9 +23,9 @@ function App() {
       <section className="projects">
         <h1 className="projectTitle">Projects</h1>
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
-            <Card.Title className="cardTitle">FCC: Tribute Page</Card.Title>
+            <Card.Title className="cardTitle">FCC:Tribute Page</Card.Title>
             <Card.Text className="cardText">
               A simple HTML page using basic CSS.
     </Card.Text>
@@ -54,6 +54,106 @@ function App() {
             <Button variant="primary" href="https://codepen.io/jpvajda/pen/GRRdwXv">CodePen</Button>
           </Card.Body>
         </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Technical Documentation</Card.Title>
+            <Card.Text className="cardText">
+              A simple documentation page.
+    </Card.Text>
+            <Button variant="primary" href="https://codepen.io/jpvajda/pen/xxxjoVN">CodePen</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Quote Machine </Card.Title>
+            <Card.Text className="cardText">
+              A simple quote application.
+    </Card.Text>
+            <Button variant="primary" href="https://codepen.io/jpvajda/pen/ExaxeYL">CodePen</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Markdown Previewer </Card.Title>
+            <Card.Text className="cardText">
+              A simple markdown application.
+    </Card.Text>
+            <Button variant="primary" href="https://codepen.io/jpvajda/pen/wvBaWBx">CodePen</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Drum Machine </Card.Title>
+            <Card.Text className="cardText">
+              A drum machine application.
+    </Card.Text>
+            <Button variant="primary" href="https://codepen.io/jpvajda/pen/LYEpLvj">CodePen</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Pomodoro Clock </Card.Title>
+            <Card.Text className="cardText">
+              A pomodoro clock application.
+    </Card.Text>
+            <Button variant="primary" href="https://codepen.io/jpvajda/pen/zYxKpbG">CodePen</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:API and Microservice Projects  </Card.Title>
+            <Card.Text className="cardText">
+              An API project.
+    </Card.Text>
+            <Button variant="primary" href="https://glitch.com/@jpvajda">Glitch</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Information Security and QA Projects </Card.Title>
+            <Card.Text className="cardText">
+              A QA and security project.
+    </Card.Text>
+            <Button variant="primary" href="https://glitch.com/@jpvajda">Glitch</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">Python Games </Card.Title>
+            <Card.Text className="cardText">
+              Simple games built with Python.
+    </Card.Text>
+            <Button variant="primary" href="https://github.com/jpvajda/python/tree/master/PythonGames">Github</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">Netlify Lambda Function </Card.Title>
+            <Card.Text className="cardText">
+              An example Lambda function on Netlify.
+    </Card.Text>
+            <Button variant="primary" href="https://jpvajda-github-io.netlify.com/.netlify/functions/lambdafunction">Netlify</Button>
+          </Card.Body>
+        </Card>
+
       </section>
     </div>
   );
