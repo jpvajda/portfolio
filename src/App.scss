@@ -5,16 +5,18 @@
   padding: 0;
 }
 
-// .codeImage {
-//   width: auto;
-//   height: 25%;
-// }
+.codeImage {
+  max-width: 50%;
+  height: auto;
+  align-self: center;
+}
 
 .card {
   width: auto;
   height: auto;
-  padding: 4px 4px 4px 4px;
-  margin: 20px 8px 20px 8px;
+  padding: 2px 2px 2px 2px;
+  margin: 10px 8px 10px 8px;
+  background-color: rgba(178, 0, 0, 0.6);
 }
 
 .cardTitle {

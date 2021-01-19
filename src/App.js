@@ -34,7 +34,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Survey Form</Card.Title>
             <Card.Text className="cardText">
@@ -45,7 +45,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Product Landing</Card.Title>
             <Card.Text className="cardText">
@@ -56,7 +56,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Technical Documentation</Card.Title>
             <Card.Text className="cardText">
@@ -67,7 +67,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Quote Machine </Card.Title>
             <Card.Text className="cardText">
@@ -78,7 +78,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Markdown Previewer </Card.Title>
             <Card.Text className="cardText">
@@ -89,7 +89,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Drum Machine </Card.Title>
             <Card.Text className="cardText">
@@ -100,7 +100,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Pomodoro Clock </Card.Title>
             <Card.Text className="cardText">
@@ -111,7 +111,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:API and Microservice Projects  </Card.Title>
             <Card.Text className="cardText">
@@ -122,7 +122,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">FCC:Information Security and QA Projects </Card.Title>
             <Card.Text className="cardText">
@@ -133,7 +133,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">Python Games </Card.Title>
             <Card.Text className="cardText">
@@ -144,7 +144,7 @@ function App() {
         </Card>
 
         <Card className="card">
-          <Card.Img variant="top" src={codeImage} />
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
           <Card.Body>
             <Card.Title className="cardTitle">Netlify Lambda Function </Card.Title>
             <Card.Text className="cardText">
