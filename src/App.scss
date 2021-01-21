@@ -11,6 +11,12 @@
   align-self: center;
 }
 
+.linkImage {
+  max-width: 25%;
+  height: auto;
+  align-self: center;
+}
+
 .card {
   width: auto;
   height: auto;
@@ -54,6 +60,22 @@
   grid-area: title;
   color: rgba(255, 255, 255, 0.9);
   margin-top: 20px;
+  font-size: 48px;
+}
+
+.references {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title title title title" "cell1 cell2 cell3 cell4 cell5";
+}
+
+.referencesTitle {
+  display: grid;
+  grid-area: title;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 48px;
 }
 

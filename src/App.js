@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import MyCarousel from './components/MyCarousel';
-import codeImage from './assets/code-image.png'
-
+import codeImage from './assets/code-image.png';
+import linkImage from './assets/link-image.png'
 
 function App() {
   return (
@@ -151,6 +151,21 @@ function App() {
               An example Lambda function on Netlify.
     </Card.Text>
             <Button variant="primary" href="https://jpvajda-github-io.netlify.com/.netlify/functions/lambdafunction">Netlify</Button>
+          </Card.Body>
+        </Card>
+      </section>
+
+      <section className="references">
+        <h1 className="referencesTitle">References</h1>
+
+        <Card className="card">
+          <Card.Img className="linkImage" variant="top" src={linkImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
+            <Card.Text className="cardText">
+              My Free Code Camp Profile
+    </Card.Text>
+            <Button variant="primary" href="https://www.freecodecamp.org/jpvajda">FCC</Button>
           </Card.Body>
         </Card>
 
