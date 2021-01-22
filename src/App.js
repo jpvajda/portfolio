@@ -163,9 +163,53 @@ function App() {
           <Card.Body>
             <Card.Title className="cardTitle">Free Code Camp</Card.Title>
             <Card.Text className="cardText">
-              My Free Code Camp Profile
+              My FCC profile
     </Card.Text>
             <Button variant="primary" href="https://www.freecodecamp.org/jpvajda">FCC</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img className="linkImage" variant="top" src={linkImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">Github</Card.Title>
+            <Card.Text className="cardText">
+              My Github profile
+    </Card.Text>
+            <Button variant="primary" href="https://github.com/jpvajda">Github</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img className="linkImage" variant="top" src={linkImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">CodeWars</Card.Title>
+            <Card.Text className="cardText">
+              My Codewars profile
+    </Card.Text>
+            <Button variant="primary" href="https://www.codewars.com/users/kratos0">Codewars</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img className="linkImage" variant="top" src={linkImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">Linkedin</Card.Title>
+            <Card.Text className="cardText">
+              My Linkedin profile
+    </Card.Text>
+            <Button variant="primary" href="https://www.linkedin.com/in/johnpvajda">Linkedin</Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img className="linkImage" variant="top" src={linkImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">Glitch</Card.Title>
+            <Card.Text className="cardText">
+              My Glitch profile
+    </Card.Text>
+            <Button variant="primary" href="https://glitch.com/@jpvajda">Glitch</Button>
           </Card.Body>
         </Card>
 
