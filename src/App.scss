@@ -4,22 +4,27 @@
   margin: 0;
   padding: 0;
 }
+.navLink {
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 1px;
+}
 
 .codeImage {
-  max-width: 50%;
+  max-width: 30%;
   height: auto;
   align-self: center;
 }
 
 .linkImage {
-  max-width: 25%;
+  max-width: 20%;
   height: auto;
   align-self: center;
   padding-top: 12px;
 }
 
 .certImage {
-  max-width: 50%;
+  max-width: 30%;
   height: auto;
   align-self: center;
 }

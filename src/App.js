@@ -23,7 +23,7 @@ function App() {
       </Helmet>
       <NavBar></NavBar>
       <MyCarousel></MyCarousel>
-      <section className="projects">
+      <section id="projects" className="projects">
         <h1 className="projectTitle">Projects</h1>
         <Card className="card">
           <Card.Img className="codeImage" variant="top" src={codeImage} />
@@ -158,7 +158,7 @@ function App() {
         </Card>
       </section>
 
-      <section className="references">
+      <section id="references" className="references">
         <h1 className="referencesTitle">References</h1>
 
         <Card className="card">
@@ -217,7 +217,7 @@ function App() {
         </Card>
       </section>
 
-      <section className="certifications">
+      <section id="certifications" className="certifications">
         <h1 className="certificationTitle">Certifications</h1>
 
         <Card className="card">

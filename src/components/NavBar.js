@@ -8,13 +8,13 @@ export default class MyCarousel extends Component {
   render() {
     return (
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#summary">John P. Vajda</Navbar.Brand>
+        <Navbar.Brand href="#name">John P. Vajda</Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="#summary">Summary</Nav.Link>
-          <Nav.Link href="#projects">Projects</Nav.Link>
-          <Nav.Link href="#references">References</Nav.Link>
-          <Nav.Link href="#pricing">Contact</Nav.Link>
-          <Nav.Link href="https://jpv-blog.netlify.app/">Blog</Nav.Link>
+          <Nav.Link className="navLink" href="#projects">Projects</Nav.Link>
+          <Nav.Link className="navLink" href="#references">References</Nav.Link>
+          <Nav.Link className="navLink" href="#certifications">Certifications</Nav.Link>
+          <Nav.Link className="navLink" href="#pricing">Contact</Nav.Link>
+          <Nav.Link className="navLink" href="https://jpv-blog.netlify.app/">Blog</Nav.Link>
         </Nav>
       </Navbar>
 
