@@ -18,6 +18,12 @@
   padding-top: 12px;
 }
 
+.certImage {
+  max-width: 50%;
+  height: auto;
+  align-self: center;
+}
+
 .card {
   width: auto;
   height: auto;
@@ -35,7 +41,6 @@
 .cardText {
   color: rgba(0, 0, 0, 0.9);
   text-align: center;
-  letter-spacing: 1px;
   font-size: 18px;
   font-weight: 900;
 }
@@ -80,8 +85,23 @@
   font-size: 48px;
 }
 
+.certifications {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title title title title" "cell1 cell2 cell3 cell4 cell5";
+}
+
+.certificationTitle {
+  display: grid;
+  grid-area: title;
+  margin-top: 20px;
+}
+
 .carouselCaption {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title title title title" "cell1 cell2 cell3 cell4";
