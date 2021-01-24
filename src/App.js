@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import MyCarousel from './components/MyCarousel';
+import NavBar from './components/NavBar';
 import codeImage from './assets/code-image.png';
 import linkImage from './assets/link-image.png';
 import certImage from './assets/certification-image.png'
@@ -20,6 +21,7 @@ function App() {
         {/* new relic script for data tracking */}
         <script src="newrelic.js"></script>
       </Helmet>
+      <NavBar></NavBar>
       <MyCarousel></MyCarousel>
       <section className="projects">
         <h1 className="projectTitle">Projects</h1>
