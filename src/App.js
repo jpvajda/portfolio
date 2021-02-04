@@ -8,7 +8,8 @@ import MyCarousel from './components/MyCarousel';
 import NavBar from './components/NavBar';
 import codeImage from './assets/code-image.png';
 import linkImage from './assets/link-image.png';
-import certImage from './assets/certification-image.png'
+import certImage from './assets/certification-image.png';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -276,6 +277,8 @@ function App() {
           </Card.Body>
         </Card>
       </section>
+
+      <Footer></Footer>
 
     </div >
   );
