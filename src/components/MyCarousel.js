@@ -15,7 +15,7 @@ export default class MyCarousel extends Component {
           />
           <Carousel.Caption >
             <h3>Hello!</h3>
-            <p>Hello! I am product and engineering leader who loves to code. I have 14 years of technical
+            <p className="carouselText">Hello! I am product and engineering leader who loves to code. I have 14 years of technical
             project and technical product management experience, and over the last 4 years been
               investing heavily in sharping my developer / engineering skill set.</p>
           </Carousel.Caption>
@@ -26,8 +26,8 @@ export default class MyCarousel extends Component {
           />
           <Carousel.Caption>
             <h3>My mission</h3>
-            <p>To empower makers and creators to build amazing things that
-                will change the world.</p>
+            <p className="carouselText">To empower makers and creators to build amazing things that
+                will change the w orld.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
