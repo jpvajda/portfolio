@@ -34,7 +34,6 @@
   height: auto;
   padding: 2px 2px 2px 2px;
   margin: 10px 8px 10px 8px;
-  background-color: rgba(178, 0, 0, 0.6);
 }
 
 .cardTitle {
@@ -144,8 +143,9 @@ p {
 .footer {
   margin-top: 1rem;
   padding: 1rem;
-  background-color: rgb(235, 195, 64);
-  position: fixed;
+  background-color: rgba(178, 0, 0, 0.7);
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
   bottom: 0;
   left: 0;
   width: 100%;
