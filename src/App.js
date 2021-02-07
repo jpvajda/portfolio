@@ -11,6 +11,7 @@ import linkImage from './assets/link-image.png';
 import certImage from './assets/certification-image.png';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div className="App">
