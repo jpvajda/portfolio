@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-// import Route from 'react-router-dom';
 import MyModal from './MyModal'
 
 export default class NavBar extends Component {
@@ -23,3 +22,10 @@ export default class NavBar extends Component {
     );
   }
 }
+
+// A callback fired when a NavItem is selected.
+
+// function (
+//  Any eventKey,
+//  SyntheticEvent event?
+// )

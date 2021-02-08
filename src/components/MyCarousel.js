@@ -10,6 +10,7 @@ export default class MyCarousel extends Component {
       <Carousel>
         <Carousel.Item>
           <img
+            alt="Caption"
             className="carouselCaption"
           />
           <Carousel.Caption >
@@ -21,16 +22,18 @@ export default class MyCarousel extends Component {
         </Carousel.Item>
         <Carousel.Item>
           <img
+            alt="Caption"
             className="carouselCaption"
           />
           <Carousel.Caption>
             <h3>My mission</h3>
             <p className="carouselText">To empower makers and creators to build amazing things that
-                will change the w orld.</p>
+                will change the world.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
+            alt="Caption"
             className="carouselCaption"
 
           />
