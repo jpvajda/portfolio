@@ -7,7 +7,7 @@
 5. convert tiles to a component  - DONE
 6. setup all page tiles correctly - DONE
 7. build a footer - DONE
-9. build a contact modal
+9. build a contact modal - DONE
 10. Optimize for mobile
 10. create a dark mode / light mode toggle
 -->

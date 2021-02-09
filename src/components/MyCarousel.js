@@ -15,7 +15,7 @@ export default class MyCarousel extends Component {
           />
           <Carousel.Caption >
             <h3>Hello!</h3>
-            <p className="carouselText">Hello! I am product and engineering leader who loves to code. I have 14 years of technical
+            <p className="carouselText">I am product and engineering leader who loves to code. I have 14 years of technical
             project and technical product management experience, and over the last 4 years been
               investing heavily in sharping my developer and engineering skill set.</p>
           </Carousel.Caption>
@@ -40,8 +40,8 @@ export default class MyCarousel extends Component {
 
           <Carousel.Caption>
             <h3>About me</h3>
-            <p>To say I love empowering developers to build cool things is an understatement.
-            Great documentation, amazing code libraries, and awesome developer support enables
+            <p>I love empowering developers to build cool and amazing things.
+            Great documentation, rich code libraries, and awesome developer support enables
             creative people to do amazing things with your software. I love seeing a
               community grow and use a product to solve their own developer challenges.</p>
 
@@ -50,8 +50,8 @@ export default class MyCarousel extends Component {
                 Being in service to people, and making their lives easier, brings me joy.</p>
 
             <p>I believe in open source, accessibility, transparency in code, and clarity in design and
-            documentation. I possess an insatiable appetite to learn, and ability to
-                learn quickly and love for coding that goes beyond words.</p>
+            documentation. I possess an insatiable appetite to learn quickly
+                and a love for coding that goes beyond words.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
