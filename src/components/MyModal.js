@@ -11,8 +11,8 @@ function MyModal() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch static backdrop modal
+      <Button variant="light" onClick={handleShow}>
+        CONTACT
       </Button>
 
       <Modal
@@ -23,17 +23,15 @@ function MyModal() {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>Contact Me</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          I will not close if you click outside me. Don't even try to press
-          escape key.
+          Reach out to me on  <a href="https://www.linkedin.com/in/johnpvajda/">Linkedin </a>  to connect!
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary">Understood</Button>
         </Modal.Footer>
       </Modal>
     </>
