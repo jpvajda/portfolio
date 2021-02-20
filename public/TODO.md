@@ -9,5 +9,11 @@
 7. build a footer - DONE
 9. build a contact modal - DONE
 10. Optimize for mobile
+10. build a hamburger menu
+
+https://www.npmjs.com/package/react-burger-menu
+
 10. create a dark mode / light mode toggle
+
+https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995
 -->

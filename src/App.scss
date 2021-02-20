@@ -42,6 +42,7 @@
 }
 
 .card {
+  display: grid;
   width: auto;
   height: auto;
   padding: 2px 2px 2px 2px;
@@ -160,6 +161,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .card {
+    display: grid;
     width: auto;
     height: auto;
     padding: 2px 2px 2px 2px;
