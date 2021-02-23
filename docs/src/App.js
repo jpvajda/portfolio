@@ -1,9 +1,8 @@
 import './App.scss';
 import React from "react";
 import { Helmet } from "react-helmet"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/esm/Card';
+import Button from 'react-bootstrap/esm/Button';
 import MyCarousel from './components/MyCarousel';
 import NavBar from './components/NavBar';
 import codeImage from './assets/code-image.png';
