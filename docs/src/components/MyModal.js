@@ -1,6 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/esm/Modal';
+import Button from 'react-bootstrap/esm/Button';
 import React, { useState } from 'react';
 
 function MyModal() {

@@ -1,6 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/esm/Navbar';
+import Nav from 'react-bootstrap/esm/Nav';
 
 function NavBar() {
 
