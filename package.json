@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jpvajda.github.io/jpvajda-react.github.io",
-  "name": "jpvajda-react.github.io",
+  "homepage": "https://jpvajda.github.io/portfolio",
+  "name": "jpvajda-portfolio",
   "version": "0.2.0",
   "private": true,
   "dependencies": {
