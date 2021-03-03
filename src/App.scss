@@ -159,10 +159,16 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .App {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
   .card {
     display: grid;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding: 2px 2px 2px 2px;
     margin: auto;
     margin-top: 10px;
@@ -179,6 +185,7 @@ p {
     display: grid;
     grid-area: title;
     margin-top: 20px;
+    font-size: 24px;
   }
 
   .references {
@@ -192,6 +199,7 @@ p {
     display: grid;
     grid-area: title;
     margin-top: 20px;
+    font-size: 24px;
   }
 
   .certifications {
@@ -205,9 +213,43 @@ p {
     display: grid;
     grid-area: title;
     margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .codeImage {
+    max-width: 20%;
+    height: auto;
+    align-self: center;
+  }
+
+  .linkImage {
+    max-width: 10%;
+    height: auto;
+    align-self: center;
+    padding-top: 12px;
+  }
+
+  .certImage {
+    max-width: 20%;
+    margin-top: 10px;
+    height: auto;
+    align-self: center;
+  }
+
+  .cardText {
+    font-size: 14px;
   }
 
   .carousel {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
 }
