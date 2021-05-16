@@ -10,7 +10,6 @@ function NavBar() {
         <Nav.Link className="navLink" href="#projects">Projects</Nav.Link>
         <Nav.Link className="navLink" href="#references">References</Nav.Link>
         <Nav.Link className="navLink" href="#certifications">Certifications</Nav.Link>
-        <Nav.Link className="navLink" href="https://jpv-blog.netlify.app/">Blog</Nav.Link>
       </Nav>
     </Navbar>
   );
