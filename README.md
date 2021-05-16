@@ -19,6 +19,11 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `yarn deploy`
+
+will run `gh-pages -d build` which builds the app for production to the `build` folder.\
+In order to get Github pages to deploy a change this should be run before pushing a commit.
+
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\
