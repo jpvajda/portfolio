@@ -1,3 +1,7 @@
+# Node version
+
+ "node-sass": "^4.14.1" requires Node 14 to work properly.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
