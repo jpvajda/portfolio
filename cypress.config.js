@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 module.exports = {
-  projectId: "qs5c54"
+  projectId: "qs5c54",
 
   e2e: {
     setupNodeEvents(on, config) {
