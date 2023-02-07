@@ -1,6 +1,11 @@
 # Node version
 
- "node-sass": "^4.14.1" requires Node 14 to work properly.
+ `"node-sass": "^4.14.1"` requires `Node 14` to work properly. You can use `NVM` to manage different Node versions locally.
+
+ # Using Cypress for testing
+
+* In the terminal run `npx cypress open` to open the [Cypress Testing App](https://docs.cypress.io/guides/getting-started/opening-the-app)
+* In the terminal run `npx cypress run --record --key xxxx`
 
 # Getting Started with Create React App
 
