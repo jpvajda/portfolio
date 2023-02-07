@@ -1,7 +1,9 @@
 require("dotenv").config();
 
+var projectId = process.env.CYPRESS_PROJECT_ID;
+
 module.exports = {
-  projectId: "qs5c54",
+  projectId: projectId,
 
   e2e: {
     setupNodeEvents(on, config) {
