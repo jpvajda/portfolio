@@ -220,6 +220,96 @@ function App() {
             </Button>
           </Card.Body>
         </Card>
+
+        <Card className="card">
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">
+              FCC:Rock Paper Scissors{" "}
+            </Card.Title>
+            <Card.Text className="cardText">
+              A Machine Learning Python project
+            </Card.Text>
+            <Button
+              variant="primary"
+              href="https://replit.com/@jpvajda/boilerplate-rock-paper-scissors?v=1"
+            >
+              Replit
+            </Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">
+              FCC:Cat & Dog Image Classifier{" "}
+            </Card.Title>
+            <Card.Text className="cardText">
+              A Machine Learning Python project
+            </Card.Text>
+            <Button
+              variant="primary"
+              href="https://colab.research.google.com/drive/11EF3V2zNub6jC_WekcJuVWNpCRSRuL4e#scrollTo=4IH86Ux_u7TZ"
+            >
+              Google Colab
+            </Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">
+              FCC:Book Recommendation Engine using KNN{" "}
+            </Card.Title>
+            <Card.Text className="cardText">
+              A Machine Learning Python project
+            </Card.Text>
+            <Button
+              variant="primary"
+              href="https://colab.research.google.com/drive/12Zh-5yafVJsjj2VWEpcJ4FSxh3pAnBJl"
+            >
+              Google Colab
+            </Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">
+              FCC:Linear Regression Health Costs Calculator{" "}
+            </Card.Title>
+            <Card.Text className="cardText">
+              A Machine Learning Python project
+            </Card.Text>
+            <Button
+              variant="primary"
+              href="https://colab.research.google.com/drive/18RGW7HsoW-D0AgF-2QFB-FfxfpzIieVr#scrollTo=Xe7RXH3N3CWU"
+            >
+              Google Colab
+            </Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">
+              FCC:Neural Network SMS Text Classifier{" "}
+            </Card.Title>
+            <Card.Text className="cardText">
+              A Machine Learning Python project
+            </Card.Text>
+            <Button
+              variant="primary"
+              href="https://colab.research.google.com/drive/1PCilUlclc3SYDCbLa3aF4l9EdNvwzUPJ#scrollTo=Dxotov85SjsC"
+            >
+              Google Colab
+            </Button>
+          </Card.Body>
+        </Card>
       </section>
 
       <section id="references" className="references">
@@ -366,6 +456,23 @@ function App() {
             </Button>
           </Card.Body>
         </Card>
+
+        <Card className="card">
+          <Card.Img className="certImage" variant="top" src={certImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
+            <Card.Text className="cardText">
+              Machine Learning with Python
+            </Card.Text>
+            <Button
+              variant="primary"
+              href="https://www.freecodecamp.org/certification/jpvajda/machine-learning-with-python-v7"
+            >
+              FCC
+            </Button>
+          </Card.Body>
+        </Card>
+
         <Card className="card">
           <Card.Img className="certImage" variant="top" src={certImage} />
           <Card.Body>

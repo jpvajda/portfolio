@@ -4,7 +4,7 @@ function MyCarousel() {
   return (
     <Carousel className="carousel">
       <Carousel.Item>
-        <img alt="Caption" className="carouselCaption" />
+        <img alt="" className="carouselCaption" />
         <Carousel.Caption>
           <h3>Hello!</h3>
           <p className="carouselText">
@@ -16,7 +16,7 @@ function MyCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img alt="Caption" className="carouselCaption" />
+        <img alt="" className="carouselCaption" />
         <Carousel.Caption>
           <h3>My mission</h3>
           <p className="carouselText">
@@ -26,7 +26,7 @@ function MyCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img alt="Caption" className="carouselCaption" />
+        <img alt="" className="carouselCaption" />
 
         <Carousel.Caption>
           <h3>About me</h3>
