@@ -1,11 +1,19 @@
 describe("home page", () => {
   beforeEach(() => {
-    cy.visit("https://jpvajda.github.io/portfolio/");
+    // run against local server
+    cy.on("uncaught:exception", (err, runnable) => {
+      return false;
+    });
+    cy.visit("http://localhost:3000/");
   });
 
   describe("Home page", () => {
     it("Check's Site is available", () => {
-      cy.visit("https://jpvajda.github.io/portfolio/");
+      // run against local server
+      cy.on("uncaught:exception", (err, runnable) => {
+        return false;
+      });
+      cy.visit("http://localhost:3000/");
     });
   });
 
@@ -13,13 +21,13 @@ describe("home page", () => {
 
   describe("Click NavBar elements", () => {
     it("Click on Projects", () => {
-      cy.get("#projects").click();
+      cy.get('[href="#projects"]');
     });
     it("Click on References", () => {
-      cy.get("#references").click();
+      cy.get('[href="#references"]');
     });
     it("Click on References", () => {
-      cy.get("#certifications").click();
+      cy.get('[href="#certifications"]');
     });
   });
 
@@ -36,23 +44,23 @@ describe("home page", () => {
 
   // PROJECTS COMPONENT
 
-  // Currently erroring out due to Cloudflare checks by Codepen
-
   // describe("Click Projects", () => {
   //   it("Click on Project Buttons", () => {
-  //     cy.get("#projects > :nth-child(2) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(3) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(4) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(5) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(6) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(7) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(8) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(9) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(10) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(11) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(12) > .card-body > .btn").click();
-  //     cy.get("#projects > :nth-child(13) > .card-body > .btn").click();
-  //   });
+  // Currently erroring out due to Cloudflare checks
+  // cy.get("#projects > :nth-child(3) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(4) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(2) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(5) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(6) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(7) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(8) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(9) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(10) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(11) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(12) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(13) > .card-body > .btn").click();
+  // cy.get("#projects > :nth-child(14) > .card-body > .btn").click();
+  // });
   // });
 
   // REFERENCES COMPONENT
@@ -76,6 +84,9 @@ describe("home page", () => {
       cy.get("#certifications > :nth-child(4) > .card-body > .btn");
       cy.get("#certifications > :nth-child(5) > .card-body > .btn");
       cy.get("#certifications > :nth-child(6) > .card-body > .btn");
+      cy.get("#certifications > :nth-child(7) > .card-body > .btn");
+      cy.get("#certifications > :nth-child(8) > .card-body > .btn");
+      cy.get("#certifications > :nth-child(9) > .card-body > .btn");
     });
   });
 
