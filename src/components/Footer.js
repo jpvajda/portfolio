@@ -4,7 +4,7 @@ import MyModal from "./MyModal";
 function Footer() {
   return (
     <div className="footer">
-      <p>John P. Vajda 2023</p>
+      <p>John P. Vajda 2024-25</p>
       <div>
         <MyModal> </MyModal>
       </div>
