@@ -30,6 +30,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn deploy`
 
+> This must be run to ensure Github Pages kicks off a build correctly and update the site.
+
 will run `gh-pages -d build` which builds the app for production to the `build` folder.\
 In order to get Github pages to deploy a change this should be run before pushing a commit.
 
