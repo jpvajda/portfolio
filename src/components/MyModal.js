@@ -1,6 +1,5 @@
-import Modal from 'react-bootstrap/esm/Modal';
-import Button from 'react-bootstrap/esm/Button';
 import React, { useState } from 'react';
+import { Modal, Button } from 'react-bootstrap';
 
 function MyModal() {
   const [show, setShow] = useState(false);

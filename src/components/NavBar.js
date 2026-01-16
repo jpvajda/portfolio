@@ -1,5 +1,4 @@
-import Navbar from 'react-bootstrap/esm/Navbar';
-import Nav from 'react-bootstrap/esm/Nav';
+import { Navbar, Nav } from 'react-bootstrap';
 
 function NavBar() {
 
