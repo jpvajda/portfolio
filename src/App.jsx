@@ -1,7 +1,6 @@
-import "./App.scss";
+import "./App.css";
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Card, Button } from "react-bootstrap";
 import MyCarousel from "./components/MyCarousel";
 import NavBar from "./components/NavBar";
 import codeImage from "./assets/code-image.png";
@@ -30,478 +29,428 @@ function App() {
       <MyCarousel></MyCarousel>
       <section id="projects" className="projects">
         <h1 className="projectTitle">Projects</h1>
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">FCC:Tribute Page</Card.Title>
-            <Card.Text className="cardText">
-              A simple HTML {"&"} CSS page
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Tribute Page</h3>
+            <p className="cardText">A simple HTML {"&"} CSS page</p>
+            <a
+              className="btn-primary"
               href="https://codepen.io/jpvajda/pen/eYYrOJe"
             >
               CodePen
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">FCC:Survey Form</Card.Title>
-            <Card.Text className="cardText">A simple survey form</Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Survey Form</h3>
+            <p className="cardText">A simple survey form</p>
+            <a
+              className="btn-primary"
               href="https://codepen.io/jpvajda/pen/BaaxybB"
             >
               CodePen
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">FCC:Product Landing</Card.Title>
-            <Card.Text className="cardText">A simple landing page</Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Product Landing</h3>
+            <p className="cardText">A simple landing page</p>
+            <a
+              className="btn-primary"
               href="https://codepen.io/jpvajda/pen/GRRdwXv"
             >
               CodePen
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
-              FCC:Technical Documentation
-            </Card.Title>
-            <Card.Text className="cardText">
-              A simple documentation page
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Technical Documentation</h3>
+            <p className="cardText">A simple documentation page</p>
+            <a
+              className="btn-primary"
               href="https://codepen.io/jpvajda/pen/xxxjoVN"
             >
               CodePen
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">FCC:Quote Machine </Card.Title>
-            <Card.Text className="cardText">
-              A simple quote application
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Quote Machine </h3>
+            <p className="cardText">A simple quote application</p>
+            <a
+              className="btn-primary"
               href="https://codepen.io/jpvajda/pen/ExaxeYL"
             >
               CodePen
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
-              FCC:Markdown Previewer{" "}
-            </Card.Title>
-            <Card.Text className="cardText">
-              A simple markdown application
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Markdown Previewer </h3>
+            <p className="cardText">A simple markdown application</p>
+            <a
+              className="btn-primary"
               href="https://codepen.io/jpvajda/pen/wvBaWBx"
             >
               CodePen
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">FCC:Drum Machine </Card.Title>
-            <Card.Text className="cardText">
-              A drum machine application
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Drum Machine </h3>
+            <p className="cardText">A drum machine application</p>
+            <a
+              className="btn-primary"
               href="https://codepen.io/jpvajda/pen/LYEpLvj"
             >
               CodePen
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">FCC:Pomodoro Clock </Card.Title>
-            <Card.Text className="cardText">
-              A pomodoro clock application
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Pomodoro Clock </h3>
+            <p className="cardText">A pomodoro clock application</p>
+            <a
+              className="btn-primary"
               href="https://codepen.io/jpvajda/pen/zYxKpbG"
             >
               CodePen
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
-              FCC:API and Microservice Projects{" "}
-            </Card.Title>
-            <Card.Text className="cardText">An API project</Card.Text>
-            <Button variant="primary" href="https://glitch.com/@jpvajda">
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:API and Microservice Projects </h3>
+            <p className="cardText">An API project</p>
+            <a className="btn-primary" href="https://glitch.com/@jpvajda">
               Glitch
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">
               FCC:Information Security and QA Projects{" "}
-            </Card.Title>
-            <Card.Text className="cardText">
-              A QA and security project
-            </Card.Text>
-            <Button variant="primary" href="https://glitch.com/@jpvajda">
+            </h3>
+            <p className="cardText">A QA and security project</p>
+            <a className="btn-primary" href="https://glitch.com/@jpvajda">
               Glitch
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Python Games </Card.Title>
-            <Card.Text className="cardText">
-              Simple games built with Python
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">Python Games </h3>
+            <p className="cardText">Simple games built with Python</p>
+            <a
+              className="btn-primary"
               href="https://github.com/jpvajda/python/tree/master/PythonGames"
             >
               Github
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
-              Netlify Lambda Function{" "}
-            </Card.Title>
-            <Card.Text className="cardText">
-              An example Lambda function on Netlify
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">Netlify Lambda Function </h3>
+            <p className="cardText">An example Lambda function on Netlify</p>
+            <a
+              className="btn-primary"
               href="https://jpvajda-github-io.netlify.com/.netlify/functions/lambdafunction"
             >
               Netlify
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
-              FCC:Rock Paper Scissors{" "}
-            </Card.Title>
-            <Card.Text className="cardText">
-              A Machine Learning Python project
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Rock Paper Scissors </h3>
+            <p className="cardText">A Machine Learning Python project</p>
+            <a
+              className="btn-primary"
               href="https://replit.com/@jpvajda/boilerplate-rock-paper-scissors?v=1"
             >
               Replit
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
-              FCC:Cat & Dog Image Classifier{" "}
-            </Card.Title>
-            <Card.Text className="cardText">
-              A Machine Learning Python project
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">FCC:Cat & Dog Image Classifier </h3>
+            <p className="cardText">A Machine Learning Python project</p>
+            <a
+              className="btn-primary"
               href="https://colab.research.google.com/drive/11EF3V2zNub6jC_WekcJuVWNpCRSRuL4e#scrollTo=4IH86Ux_u7TZ"
             >
               Google Colab
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">
               FCC:Book Recommendation Engine using KNN{" "}
-            </Card.Title>
-            <Card.Text className="cardText">
-              A Machine Learning Python project
-            </Card.Text>
-            <Button
-              variant="primary"
+            </h3>
+            <p className="cardText">A Machine Learning Python project</p>
+            <a
+              className="btn-primary"
               href="https://colab.research.google.com/drive/12Zh-5yafVJsjj2VWEpcJ4FSxh3pAnBJl"
             >
               Google Colab
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">
               FCC:Linear Regression Health Costs Calculator{" "}
-            </Card.Title>
-            <Card.Text className="cardText">
-              A Machine Learning Python project
-            </Card.Text>
-            <Button
-              variant="primary"
+            </h3>
+            <p className="cardText">A Machine Learning Python project</p>
+            <a
+              className="btn-primary"
               href="https://colab.research.google.com/drive/18RGW7HsoW-D0AgF-2QFB-FfxfpzIieVr#scrollTo=Xe7RXH3N3CWU"
             >
               Google Colab
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="codeImage" variant="top" src={codeImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">
+        <div className="card terminal-window">
+          <img className="codeImage" src={codeImage} alt="Code" />
+          <div className="card-body">
+            <h3 className="cardTitle">
               FCC:Neural Network SMS Text Classifier{" "}
-            </Card.Title>
-            <Card.Text className="cardText">
-              A Machine Learning Python project
-            </Card.Text>
-            <Button
-              variant="primary"
+            </h3>
+            <p className="cardText">A Machine Learning Python project</p>
+            <a
+              className="btn-primary"
               href="https://colab.research.google.com/drive/1PCilUlclc3SYDCbLa3aF4l9EdNvwzUPJ#scrollTo=Dxotov85SjsC"
             >
               Google Colab
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section id="references" className="references">
         <h1 className="referencesTitle">References</h1>
 
-        <Card className="card">
-          <Card.Img className="linkImage" variant="top" src={linkImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
-            <Card.Text className="cardText">My FCC profile</Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="linkImage" src={linkImage} alt="Link" />
+          <div className="card-body">
+            <h3 className="cardTitle">Free Code Camp</h3>
+            <p className="cardText">My FCC profile</p>
+            <a
+              className="btn-primary"
               href="https://www.freecodecamp.org/jpvajda"
             >
               FCC
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="linkImage" variant="top" src={linkImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Github</Card.Title>
-            <Card.Text className="cardText">My Github profile</Card.Text>
-            <Button variant="primary" href="https://github.com/jpvajda">
+        <div className="card terminal-window">
+          <img className="linkImage" src={linkImage} alt="Link" />
+          <div className="card-body">
+            <h3 className="cardTitle">Github</h3>
+            <p className="cardText">My Github profile</p>
+            <a className="btn-primary" href="https://github.com/jpvajda">
               Github
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="linkImage" variant="top" src={linkImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">CodeWars</Card.Title>
-            <Card.Text className="cardText">My Codewars profile</Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="linkImage" src={linkImage} alt="Link" />
+          <div className="card-body">
+            <h3 className="cardTitle">CodeWars</h3>
+            <p className="cardText">My Codewars profile</p>
+            <a
+              className="btn-primary"
               href="https://www.codewars.com/users/kratos0"
             >
               Codewars
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="linkImage" variant="top" src={linkImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Linkedin</Card.Title>
-            <Card.Text className="cardText">My Linkedin profile</Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="linkImage" src={linkImage} alt="Link" />
+          <div className="card-body">
+            <h3 className="cardTitle">Linkedin</h3>
+            <p className="cardText">My Linkedin profile</p>
+            <a
+              className="btn-primary"
               href="https://www.linkedin.com/in/johnpvajda"
             >
               Linkedin
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="linkImage" variant="top" src={linkImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Glitch</Card.Title>
-            <Card.Text className="cardText">My Glitch profile</Card.Text>
-            <Button variant="primary" href="https://glitch.com/@jpvajda">
+        <div className="card terminal-window">
+          <img className="linkImage" src={linkImage} alt="Link" />
+          <div className="card-body">
+            <h3 className="cardTitle">Glitch</h3>
+            <p className="cardText">My Glitch profile</p>
+            <a className="btn-primary" href="https://glitch.com/@jpvajda">
               Glitch
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section id="certifications" className="certifications">
         <h1 className="certificationTitle">Certifications</h1>
 
-        <Card className="card">
-          <Card.Img className="certImage" variant="top" src={certImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
-            <Card.Text className="cardText">Responsive Web Design</Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="certImage" src={certImage} alt="Certification" />
+          <div className="card-body">
+            <h3 className="cardTitle">Free Code Camp</h3>
+            <p className="cardText">Responsive Web Design</p>
+            <a
+              className="btn-primary"
               href="https://www.freecodecamp.org/certification/jpvajda/responsive-web-design"
             >
               FCC
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="certImage" variant="top" src={certImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
-            <Card.Text className="cardText">
-              JS Algorithms {"&"} Data Structures
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="certImage" src={certImage} alt="Certification" />
+          <div className="card-body">
+            <h3 className="cardTitle">Free Code Camp</h3>
+            <p className="cardText">JS Algorithms {"&"} Data Structures</p>
+            <a
+              className="btn-primary"
               href="https://www.freecodecamp.org/certification/jpvajda/javascript-algorithms-and-data-structures"
             >
               FCC
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="certImage" variant="top" src={certImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
-            <Card.Text className="cardText">Front End Libraries</Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="certImage" src={certImage} alt="Certification" />
+          <div className="card-body">
+            <h3 className="cardTitle">Free Code Camp</h3>
+            <p className="cardText">Front End Libraries</p>
+            <a
+              className="btn-primary"
               href="https://www.freecodecamp.org/certification/jpvajda/front-end-libraries"
             >
               FCC
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="certImage" variant="top" src={certImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
-            <Card.Text className="cardText">APIs {"&"} Microservices</Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="certImage" src={certImage} alt="Certification" />
+          <div className="card-body">
+            <h3 className="cardTitle">Free Code Camp</h3>
+            <p className="cardText">APIs {"&"} Microservices</p>
+            <a
+              className="btn-primary"
               href="https://www.freecodecamp.org/certification/jpvajda/apis-and-microservices"
             >
               FCC
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="certImage" variant="top" src={certImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
-            <Card.Text className="cardText">
-              Information Security {"&"} QA
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="certImage" src={certImage} alt="Certification" />
+          <div className="card-body">
+            <h3 className="cardTitle">Free Code Camp</h3>
+            <p className="cardText">Information Security {"&"} QA</p>
+            <a
+              className="btn-primary"
               href="https://www.apollographql.com/tutorials/certifications/36cf87f9-de45-492e-bad1-b16de96eb78e"
             >
               FCC
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="certImage" variant="top" src={certImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Free Code Camp</Card.Title>
-            <Card.Text className="cardText">
-              Machine Learning with Python
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="certImage" src={certImage} alt="Certification" />
+          <div className="card-body">
+            <h3 className="cardTitle">Free Code Camp</h3>
+            <p className="cardText">Machine Learning with Python</p>
+            <a
+              className="btn-primary"
               href="https://www.freecodecamp.org/certification/jpvajda/machine-learning-with-python-v7"
             >
               FCC
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
 
-        <Card className="card">
-          <Card.Img className="certImage" variant="top" src={certImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Apollo GraphQL</Card.Title>
-            <Card.Text className="cardText">
-              Graph Developer Associate
-            </Card.Text>
-            <Button
-              variant="primary"
+        <div className="card terminal-window">
+          <img className="certImage" src={certImage} alt="Certification" />
+          <div className="card-body">
+            <h3 className="cardTitle">Apollo GraphQL</h3>
+            <p className="cardText">Graph Developer Associate</p>
+            <a
+              className="btn-primary"
               href="https://www.apollographql.com/tutorials/certifications/36cf87f9-de45-492e-bad1-b16de96eb78e"
             >
               GraphQL
-            </Button>
-          </Card.Body>
-        </Card>
-        <Card className="card">
-          <Card.Img className="certImage" variant="top" src={certImage} />
-          <Card.Body>
-            <Card.Title className="cardTitle">Apollo GraphQL</Card.Title>
-            <Card.Text className="cardText">
-              Graph Developer Professional
-            </Card.Text>
-            <Button
-              variant="primary"
+            </a>
+          </div>
+        </div>
+        <div className="card terminal-window">
+          <img className="certImage" src={certImage} alt="Certification" />
+          <div className="card-body">
+            <h3 className="cardTitle">Apollo GraphQL</h3>
+            <p className="cardText">Graph Developer Professional</p>
+            <a
+              className="btn-primary"
               href="https://www.apollographql.com/tutorials/certifications/e0aa779b-763a-4aeb-a8ff-44ebf139db79"
             >
               GraphQL
-            </Button>
-          </Card.Body>
-        </Card>
+            </a>
+          </div>
+        </div>
       </section>
 
       <Footer></Footer>
