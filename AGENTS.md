@@ -10,6 +10,7 @@ This file defines rules and conventions for AI agents working on the portfolio r
  - Typscript 5.9.2,
  - Tailwind, 4.1.19
  - Jest 30.2.0
+ - Vite  7.3.1
 **Deployment:** GitHub Pages
 **Repository:** https://github.com/jpvajda/portfolio
 **Live Site:** https://jpvajda.github.io/portfolio
@@ -460,6 +461,7 @@ This portfolio uses a **terminal/command-line interface aesthetic** inspired by 
 For detailed requirements, see:
 - `refactor_specs/REDESIGN_REQUIREMENTS.md` - Complete redesign requirements & design system
 - `refactor_specs/PORTFOLIO_REDESIGN_GUIDE.md` - Step-by-step guide
+- `refactor_spects/AGENTIC_WORKFLOW_PHASES.md` - how to make PRs.
 - `package.json` - Current dependencies and scripts
 - `cypress/` - Existing E2E tests
 
