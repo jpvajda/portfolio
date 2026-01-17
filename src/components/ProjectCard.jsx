@@ -56,12 +56,9 @@ const ProjectCard = ({ project }) => {
           />
         </div>
 
-        {/* Project Title with Terminal Cursor */}
+        {/* Project Title */}
         <h3 className="text-xl font-bold text-terminal-text-primary mb-3 font-mono">
           &gt; {title}
-          <span className="terminal-cursor ml-1 opacity-0 group-hover:opacity-100">
-            █
-          </span>
         </h3>
 
         {/* Project Description */}
