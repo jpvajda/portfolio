@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // TODO Phase 3: Replace with Headless UI Dialog component
 
 function MyModal() {
@@ -16,8 +16,14 @@ function MyModal() {
       </button>
 
       {show && (
-        <div className="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={handleClose}>
-          <div className="modal-content terminal-window max-w-lg" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={handleClose}
+        >
+          <div
+            className="modal-content terminal-window max-w-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="modal-header flex justify-between items-center mb-4">
               <h3 className="terminal-text text-xl">Contact Me</h3>
               <button
@@ -28,7 +34,14 @@ function MyModal() {
               </button>
             </div>
             <div className="modal-body mb-4">
-              Reach out to me on <a href="https://www.linkedin.com/in/johnpvajda/" className="terminal-text underline">Linkedin</a> to connect!
+              Reach out to me on{" "}
+              <a
+                href="https://www.linkedin.com/in/johnpvajda/"
+                className="terminal-text underline"
+              >
+                Linkedin
+              </a>{" "}
+              to connect!
             </div>
             <div className="modal-footer flex justify-end">
               <button

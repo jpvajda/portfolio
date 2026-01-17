@@ -7,9 +7,24 @@ function NavBar() {
         John P. Vajda
       </a>
       <div className="nav-links flex gap-4">
-        <a className="navLink terminal-text hover:text-terminal-green-dim" href="#projects">Projects</a>
-        <a className="navLink terminal-text hover:text-terminal-green-dim" href="#references">References</a>
-        <a className="navLink terminal-text hover:text-terminal-green-dim" href="#certifications">Certifications</a>
+        <a
+          className="navLink terminal-text hover:text-terminal-green-dim"
+          href="#projects"
+        >
+          Projects
+        </a>
+        <a
+          className="navLink terminal-text hover:text-terminal-green-dim"
+          href="#references"
+        >
+          References
+        </a>
+        <a
+          className="navLink terminal-text hover:text-terminal-green-dim"
+          href="#certifications"
+        >
+          Certifications
+        </a>
       </div>
     </nav>
   );

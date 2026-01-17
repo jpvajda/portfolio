@@ -8,7 +8,7 @@
   --terminal-text-primary: #e0e0e0;
   --terminal-text-secondary: #a0a0a0;
   --terminal-text-tertiary: #6b6b6b;
-  --terminal-green: #7FFF00;
+  --terminal-green: #7fff00;
   --terminal-green-dim: #4a9b00;
   --terminal-green-glow: rgba(127, 255, 0, 0.2);
   --terminal-red: #ff5555;
@@ -19,7 +19,8 @@
 /* Terminal Theme Base Styles */
 body {
   margin: 0;
-  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
   background-color: var(--terminal-bg-primary);
   color: var(--terminal-text-primary);
   -webkit-font-smoothing: antialiased;
@@ -27,7 +28,8 @@ body {
 }
 
 code {
-  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
   color: var(--terminal-green);
 }
 
@@ -48,8 +50,14 @@ code {
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .terminal-glow {
@@ -58,7 +66,8 @@ code {
 
 .terminal-text {
   color: var(--terminal-green);
-  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
 }
 
 .terminal-chrome {

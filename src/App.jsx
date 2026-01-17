@@ -33,9 +33,7 @@ function App() {
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
             <h3 className="cardTitle">FCC:Tribute Page</h3>
-            <p className="cardText">
-              A simple HTML {"&"} CSS page
-            </p>
+            <p className="cardText">A simple HTML {"&"} CSS page</p>
             <a
               className="btn-primary"
               href="https://codepen.io/jpvajda/pen/eYYrOJe"
@@ -76,12 +74,8 @@ function App() {
         <div className="card terminal-window">
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:Technical Documentation
-            </h3>
-            <p className="cardText">
-              A simple documentation page
-            </p>
+            <h3 className="cardTitle">FCC:Technical Documentation</h3>
+            <p className="cardText">A simple documentation page</p>
             <a
               className="btn-primary"
               href="https://codepen.io/jpvajda/pen/xxxjoVN"
@@ -95,9 +89,7 @@ function App() {
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
             <h3 className="cardTitle">FCC:Quote Machine </h3>
-            <p className="cardText">
-              A simple quote application
-            </p>
+            <p className="cardText">A simple quote application</p>
             <a
               className="btn-primary"
               href="https://codepen.io/jpvajda/pen/ExaxeYL"
@@ -110,12 +102,8 @@ function App() {
         <div className="card terminal-window">
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:Markdown Previewer{" "}
-            </h3>
-            <p className="cardText">
-              A simple markdown application
-            </p>
+            <h3 className="cardTitle">FCC:Markdown Previewer </h3>
+            <p className="cardText">A simple markdown application</p>
             <a
               className="btn-primary"
               href="https://codepen.io/jpvajda/pen/wvBaWBx"
@@ -129,9 +117,7 @@ function App() {
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
             <h3 className="cardTitle">FCC:Drum Machine </h3>
-            <p className="cardText">
-              A drum machine application
-            </p>
+            <p className="cardText">A drum machine application</p>
             <a
               className="btn-primary"
               href="https://codepen.io/jpvajda/pen/LYEpLvj"
@@ -145,9 +131,7 @@ function App() {
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
             <h3 className="cardTitle">FCC:Pomodoro Clock </h3>
-            <p className="cardText">
-              A pomodoro clock application
-            </p>
+            <p className="cardText">A pomodoro clock application</p>
             <a
               className="btn-primary"
               href="https://codepen.io/jpvajda/pen/zYxKpbG"
@@ -160,9 +144,7 @@ function App() {
         <div className="card terminal-window">
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:API and Microservice Projects{" "}
-            </h3>
+            <h3 className="cardTitle">FCC:API and Microservice Projects </h3>
             <p className="cardText">An API project</p>
             <a className="btn-primary" href="https://glitch.com/@jpvajda">
               Glitch
@@ -176,9 +158,7 @@ function App() {
             <h3 className="cardTitle">
               FCC:Information Security and QA Projects{" "}
             </h3>
-            <p className="cardText">
-              A QA and security project
-            </p>
+            <p className="cardText">A QA and security project</p>
             <a className="btn-primary" href="https://glitch.com/@jpvajda">
               Glitch
             </a>
@@ -189,9 +169,7 @@ function App() {
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
             <h3 className="cardTitle">Python Games </h3>
-            <p className="cardText">
-              Simple games built with Python
-            </p>
+            <p className="cardText">Simple games built with Python</p>
             <a
               className="btn-primary"
               href="https://github.com/jpvajda/python/tree/master/PythonGames"
@@ -204,12 +182,8 @@ function App() {
         <div className="card terminal-window">
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
-            <h3 className="cardTitle">
-              Netlify Lambda Function{" "}
-            </h3>
-            <p className="cardText">
-              An example Lambda function on Netlify
-            </p>
+            <h3 className="cardTitle">Netlify Lambda Function </h3>
+            <p className="cardText">An example Lambda function on Netlify</p>
             <a
               className="btn-primary"
               href="https://jpvajda-github-io.netlify.com/.netlify/functions/lambdafunction"
@@ -222,12 +196,8 @@ function App() {
         <div className="card terminal-window">
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:Rock Paper Scissors{" "}
-            </h3>
-            <p className="cardText">
-              A Machine Learning Python project
-            </p>
+            <h3 className="cardTitle">FCC:Rock Paper Scissors </h3>
+            <p className="cardText">A Machine Learning Python project</p>
             <a
               className="btn-primary"
               href="https://replit.com/@jpvajda/boilerplate-rock-paper-scissors?v=1"
@@ -240,12 +210,8 @@ function App() {
         <div className="card terminal-window">
           <img className="codeImage" src={codeImage} alt="Code" />
           <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:Cat & Dog Image Classifier{" "}
-            </h3>
-            <p className="cardText">
-              A Machine Learning Python project
-            </p>
+            <h3 className="cardTitle">FCC:Cat & Dog Image Classifier </h3>
+            <p className="cardText">A Machine Learning Python project</p>
             <a
               className="btn-primary"
               href="https://colab.research.google.com/drive/11EF3V2zNub6jC_WekcJuVWNpCRSRuL4e#scrollTo=4IH86Ux_u7TZ"
@@ -261,9 +227,7 @@ function App() {
             <h3 className="cardTitle">
               FCC:Book Recommendation Engine using KNN{" "}
             </h3>
-            <p className="cardText">
-              A Machine Learning Python project
-            </p>
+            <p className="cardText">A Machine Learning Python project</p>
             <a
               className="btn-primary"
               href="https://colab.research.google.com/drive/12Zh-5yafVJsjj2VWEpcJ4FSxh3pAnBJl"
@@ -279,9 +243,7 @@ function App() {
             <h3 className="cardTitle">
               FCC:Linear Regression Health Costs Calculator{" "}
             </h3>
-            <p className="cardText">
-              A Machine Learning Python project
-            </p>
+            <p className="cardText">A Machine Learning Python project</p>
             <a
               className="btn-primary"
               href="https://colab.research.google.com/drive/18RGW7HsoW-D0AgF-2QFB-FfxfpzIieVr#scrollTo=Xe7RXH3N3CWU"
@@ -297,9 +259,7 @@ function App() {
             <h3 className="cardTitle">
               FCC:Neural Network SMS Text Classifier{" "}
             </h3>
-            <p className="cardText">
-              A Machine Learning Python project
-            </p>
+            <p className="cardText">A Machine Learning Python project</p>
             <a
               className="btn-primary"
               href="https://colab.research.google.com/drive/1PCilUlclc3SYDCbLa3aF4l9EdNvwzUPJ#scrollTo=Dxotov85SjsC"
@@ -399,9 +359,7 @@ function App() {
           <img className="certImage" src={certImage} alt="Certification" />
           <div className="card-body">
             <h3 className="cardTitle">Free Code Camp</h3>
-            <p className="cardText">
-              JS Algorithms {"&"} Data Structures
-            </p>
+            <p className="cardText">JS Algorithms {"&"} Data Structures</p>
             <a
               className="btn-primary"
               href="https://www.freecodecamp.org/certification/jpvajda/javascript-algorithms-and-data-structures"
@@ -443,9 +401,7 @@ function App() {
           <img className="certImage" src={certImage} alt="Certification" />
           <div className="card-body">
             <h3 className="cardTitle">Free Code Camp</h3>
-            <p className="cardText">
-              Information Security {"&"} QA
-            </p>
+            <p className="cardText">Information Security {"&"} QA</p>
             <a
               className="btn-primary"
               href="https://www.apollographql.com/tutorials/certifications/36cf87f9-de45-492e-bad1-b16de96eb78e"
@@ -459,9 +415,7 @@ function App() {
           <img className="certImage" src={certImage} alt="Certification" />
           <div className="card-body">
             <h3 className="cardTitle">Free Code Camp</h3>
-            <p className="cardText">
-              Machine Learning with Python
-            </p>
+            <p className="cardText">Machine Learning with Python</p>
             <a
               className="btn-primary"
               href="https://www.freecodecamp.org/certification/jpvajda/machine-learning-with-python-v7"
@@ -475,9 +429,7 @@ function App() {
           <img className="certImage" src={certImage} alt="Certification" />
           <div className="card-body">
             <h3 className="cardTitle">Apollo GraphQL</h3>
-            <p className="cardText">
-              Graph Developer Associate
-            </p>
+            <p className="cardText">Graph Developer Associate</p>
             <a
               className="btn-primary"
               href="https://www.apollographql.com/tutorials/certifications/36cf87f9-de45-492e-bad1-b16de96eb78e"
@@ -490,9 +442,7 @@ function App() {
           <img className="certImage" src={certImage} alt="Certification" />
           <div className="card-body">
             <h3 className="cardTitle">Apollo GraphQL</h3>
-            <p className="cardText">
-              Graph Developer Professional
-            </p>
+            <p className="cardText">Graph Developer Professional</p>
             <a
               className="btn-primary"
               href="https://www.apollographql.com/tutorials/certifications/e0aa779b-763a-4aeb-a8ff-44ebf139db79"
