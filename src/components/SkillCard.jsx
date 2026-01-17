@@ -2,18 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import * as HeroIcons from "@heroicons/react/24/outline";
 
-/**
- * SkillCard - Terminal window styled skill/competency card
- *
- * Displays skills and competencies with:
- * - macOS window chrome (red, yellow, green dots)
- * - Heroicon for visual representation
- * - Terminal aesthetic
- * - Hover effects
- */
 const SkillCard = ({ item }) => {
   const { title, description, icon } = item;
-  
+
   // Dynamically get the icon component from heroicons
   const IconComponent = HeroIcons[icon] || HeroIcons.CommandLineIcon;
 
@@ -53,7 +44,7 @@ const SkillCard = ({ item }) => {
       <div className="p-6">
         {/* Icon */}
         <div className="flex justify-center mb-4">
-          <IconComponent 
+          <IconComponent
             className="w-12 h-12 text-terminal-green opacity-80 group-hover:opacity-100 transition-opacity"
             aria-hidden="true"
           />

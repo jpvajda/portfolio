@@ -29,9 +29,12 @@ function App() {
       </Helmet>
       <NavBar></NavBar>
       <Hero></Hero>
-      
+
       {/* Core Competencies Section */}
-      <section id="competencies" className="competencies py-8 px-4 md:px-8 lg:px-16">
+      <section
+        id="competencies"
+        className="competencies py-8 px-4 md:px-8 lg:px-16"
+      >
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
@@ -53,7 +56,10 @@ function App() {
       </section>
 
       {/* Technical Skills Section */}
-      <section id="skills" className="skills py-8 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary">
+      <section
+        id="skills"
+        className="skills py-8 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
+      >
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
