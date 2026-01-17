@@ -1,4 +1,3 @@
-import "./App.css";
 import React from "react";
 import { Helmet } from "react-helmet";
 import MyCarousel from "./components/MyCarousel";
@@ -28,8 +27,8 @@ function App() {
       </Helmet>
       <NavBar></NavBar>
       <MyCarousel></MyCarousel>
-      <section id="projects" className="projects py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section id="projects" className="projects py-16 px-4 md:px-8 lg:px-16">
+        <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
@@ -40,8 +39,8 @@ function App() {
             </p>
           </div>
 
-          {/* Project Grid - 2 columns max for wider cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Project Grid - Single column for full width cards */}
+          <div className="grid grid-cols-1 gap-6">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
@@ -49,8 +48,11 @@ function App() {
         </div>
       </section>
 
-      <section id="references" className="references py-16 px-4 bg-terminal-bg-primary">
-        <div className="max-w-7xl mx-auto">
+      <section
+        id="references"
+        className="references py-16 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
+      >
+        <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
@@ -61,8 +63,8 @@ function App() {
             </p>
           </div>
 
-          {/* References Grid - 2 columns max */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* References Grid - Single column for full width cards */}
+          <div className="grid grid-cols-1 gap-6">
             {references.map((reference) => (
               <ProjectCard key={reference.id} project={reference} />
             ))}
@@ -70,8 +72,11 @@ function App() {
         </div>
       </section>
 
-      <section id="certifications" className="certifications py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section
+        id="certifications"
+        className="certifications py-16 px-4 md:px-8 lg:px-16"
+      >
+        <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
@@ -82,15 +87,15 @@ function App() {
             </p>
           </div>
 
-          {/* Certifications Grid - 2 columns max */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Certifications Grid - Single column for full width cards */}
+          <div className="grid grid-cols-1 gap-6">
             {certifications.map((cert) => (
-              <ProjectCard 
-                key={cert.id} 
+              <ProjectCard
+                key={cert.id}
                 project={{
                   ...cert,
                   title: `${cert.organization}: ${cert.title}`,
-                }} 
+                }}
               />
             ))}
           </div>
