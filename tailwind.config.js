@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import headlessui from '@headlessui/tailwindcss'
+
 export default {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -8,7 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Terminal theme colors
+        // Terminal theme colors from REDESIGN_REQUIREMENTS.md
         terminal: {
           bg: {
             primary: '#0d0d0d',
@@ -23,7 +25,7 @@ export default {
           green: {
             DEFAULT: '#7FFF00',
             dim: '#4a9b00',
-            glow: '#7FFF0033',
+            glow: 'rgba(127, 255, 0, 0.2)',
           },
           red: '#ff5555',
           yellow: '#ffff55',
@@ -56,5 +58,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [headlessui],
 }

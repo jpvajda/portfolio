@@ -1,8 +1,75 @@
 @import "tailwindcss";
 
-/* TODO Phase 2: Add terminal theme styles */
+/* Terminal Theme CSS Variables */
+:root {
+  --terminal-bg-primary: #0d0d0d;
+  --terminal-bg-secondary: #1a1a1a;
+  --terminal-bg-tertiary: #262626;
+  --terminal-text-primary: #e0e0e0;
+  --terminal-text-secondary: #a0a0a0;
+  --terminal-text-tertiary: #6b6b6b;
+  --terminal-green: #7FFF00;
+  --terminal-green-dim: #4a9b00;
+  --terminal-green-glow: rgba(127, 255, 0, 0.2);
+  --terminal-red: #ff5555;
+  --terminal-yellow: #ffff55;
+  --terminal-blue: #5555ff;
+}
+
+/* Terminal Theme Base Styles */
 body {
   margin: 0;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  background-color: var(--terminal-bg-primary);
+  color: var(--terminal-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  color: var(--terminal-green);
+}
+
+/* Terminal Aesthetic Utilities */
+.terminal-window {
+  background-color: var(--terminal-bg-secondary);
+  border: 1px solid var(--terminal-bg-tertiary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 0.5rem;
+  height: 1.25rem;
+  background-color: var(--terminal-green);
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.terminal-glow {
+  box-shadow: 0 0 10px var(--terminal-green-glow);
+}
+
+.terminal-text {
+  color: var(--terminal-green);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+.terminal-chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.terminal-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
 }

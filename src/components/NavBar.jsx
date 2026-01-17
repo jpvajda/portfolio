@@ -1,16 +1,17 @@
-import { Navbar, Nav } from 'react-bootstrap';
+// TODO Phase 5: Replace with proper navigation using Headless UI
 
 function NavBar() {
-
   return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#name">John P. Vajda</Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link className="navLink" href="#projects">Projects</Nav.Link>
-        <Nav.Link className="navLink" href="#references">References</Nav.Link>
-        <Nav.Link className="navLink" href="#certifications">Certifications</Nav.Link>
-      </Nav>
-    </Navbar>
+    <nav className="navbar terminal-window flex justify-between items-center">
+      <a href="#name" className="navbar-brand terminal-text text-2xl font-bold">
+        John P. Vajda
+      </a>
+      <div className="nav-links flex gap-4">
+        <a className="navLink terminal-text hover:text-terminal-green-dim" href="#projects">Projects</a>
+        <a className="navLink terminal-text hover:text-terminal-green-dim" href="#references">References</a>
+        <a className="navLink terminal-text hover:text-terminal-green-dim" href="#certifications">Certifications</a>
+      </div>
+    </nav>
   );
 }
 

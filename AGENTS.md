@@ -419,6 +419,7 @@ export default ComponentName;
 - Review third-party library code when possible
 - Use secure Content Security Policy headers
 - Implement proper CORS if adding backend
+- ALWAYS use pnpm not yarn not npm
 
 ## Questions to Ask
 
