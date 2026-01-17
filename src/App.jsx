@@ -39,8 +39,8 @@ function App() {
             </p>
           </div>
 
-          {/* Project Grid - Single column for full width cards */}
-          <div className="grid grid-cols-1 gap-6">
+          {/* Project Grid - 3 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
@@ -63,8 +63,8 @@ function App() {
             </p>
           </div>
 
-          {/* References Grid - Single column for full width cards */}
-          <div className="grid grid-cols-1 gap-6">
+          {/* References Grid - 3 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {references.map((reference) => (
               <ProjectCard key={reference.id} project={reference} />
             ))}
@@ -87,15 +87,15 @@ function App() {
             </p>
           </div>
 
-          {/* Certifications Grid - Single column for full width cards */}
-          <div className="grid grid-cols-1 gap-6">
+          {/* Certifications Grid - 3 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert) => (
-              <ProjectCard
-                key={cert.id}
+              <ProjectCard 
+                key={cert.id} 
                 project={{
                   ...cert,
                   title: `${cert.organization}: ${cert.title}`,
-                }}
+                }} 
               />
             ))}
           </div>
