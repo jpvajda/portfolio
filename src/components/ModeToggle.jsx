@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class ModeToggle extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      dark: false
+      dark: false,
     };
 
     this.changeTheme = this.changeTheme.bind(this);
@@ -18,7 +18,11 @@ class ModeToggle extends Component {
   render() {
     return (
       <div>
-        <div className={'theme ' + (this.state.dark ? 'theme--dark' : 'theme--default')}>
+        <div
+          className={
+            "theme " + (this.state.dark ? "theme--dark" : "theme--default")
+          }
+        >
           <button onClick={this.changeTheme}>Toggle Theme</button>
         </div>
       </div>

@@ -30,21 +30,21 @@ function App() {
       <MyCarousel></MyCarousel>
       <section id="projects" className="projects">
         <h1 className="projectTitle">Projects</h1>
-        <div className="card">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Tribute Page</h3>
-            <p className="cardText">
+        <Card className="card">
+          <Card.Img className="codeImage" variant="top" src={codeImage} />
+          <Card.Body>
+            <Card.Title className="cardTitle">FCC:Tribute Page</Card.Title>
+            <Card.Text className="cardText">
               A simple HTML {"&"} CSS page
-            </p>
-            <a
-              className="btn-primary"
+            </Card.Text>
+            <Button
+              variant="primary"
               href="https://codepen.io/jpvajda/pen/eYYrOJe"
             >
               CodePen
-            </a>
-          </div>
-        </div>
+            </Button>
+          </Card.Body>
+        </Card>
 
         <Card className="card">
           <Card.Img className="codeImage" variant="top" src={codeImage} />
