@@ -4,14 +4,6 @@
 export const references = [
   {
     id: 1,
-    title: "Free Code Camp",
-    description: "My FCC profile",
-    link: "https://www.freecodecamp.org/jpvajda",
-    linkText: "FCC",
-    path: "~/links/freecodecamp",
-  },
-  {
-    id: 2,
     title: "Github",
     description: "My Github profile",
     link: "https://github.com/jpvajda",
@@ -19,7 +11,7 @@ export const references = [
     path: "~/links/github",
   },
   {
-    id: 3,
+    id: 2,
     title: "Linkedin",
     description: "My Linkedin profile",
     link: "https://www.linkedin.com/in/johnpvajda",
@@ -27,7 +19,7 @@ export const references = [
     path: "~/links/linkedin",
   },
   {
-    id: 4,
+    id: 3,
     title: "X (Twitter)",
     description: "My X profile",
     link: "https://x.com/johnpvajda",
@@ -35,7 +27,7 @@ export const references = [
     path: "~/links/x",
   },
   {
-    id: 5,
+    id: 4,
     title: "BlueSky",
     description: "My BlueSky profile",
     link: "https://bsky.app/profile/johnpvajda.bsky.social",
