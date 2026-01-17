@@ -9,7 +9,7 @@ function MyCarousel() {
           I am an impact driven product led growth leader focused on building
           amazing Developer Experience.
         </p>
-        
+
         <h3 className="mt-6">About me</h3>
         <p className="carouselText">
           I thrive on empowering developers to build amazing things. When you

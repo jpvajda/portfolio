@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./App.css";
 import React from "react";
 import { Helmet } from "react-helmet";
 import MyCarousel from "./components/MyCarousel";
