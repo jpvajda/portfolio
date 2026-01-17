@@ -3,7 +3,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import MyCarousel from "./components/MyCarousel";
 import NavBar from "./components/NavBar";
-import codeImage from "./assets/code-image.png";
+import ProjectCard from "./components/ProjectCard";
+import { projects } from "./data/projects";
 import linkImage from "./assets/link-image.png";
 import certImage from "./assets/certification-image.png";
 import Footer from "./components/Footer";
@@ -27,245 +28,23 @@ function App() {
       </Helmet>
       <NavBar></NavBar>
       <MyCarousel></MyCarousel>
-      <section id="projects" className="projects">
-        <h1 className="projectTitle">Projects</h1>
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Tribute Page</h3>
-            <p className="cardText">A simple HTML {"&"} CSS page</p>
-            <a
-              className="btn-primary"
-              href="https://codepen.io/jpvajda/pen/eYYrOJe"
-            >
-              CodePen
-            </a>
+      <section id="projects" className="projects py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
+              &gt; cd ~/projects
+            </h1>
+            <p className="text-terminal-text-secondary font-mono text-sm">
+              john@portfolio:~/projects$ ls -la
+            </p>
           </div>
-        </div>
 
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Survey Form</h3>
-            <p className="cardText">A simple survey form</p>
-            <a
-              className="btn-primary"
-              href="https://codepen.io/jpvajda/pen/BaaxybB"
-            >
-              CodePen
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Product Landing</h3>
-            <p className="cardText">A simple landing page</p>
-            <a
-              className="btn-primary"
-              href="https://codepen.io/jpvajda/pen/GRRdwXv"
-            >
-              CodePen
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Technical Documentation</h3>
-            <p className="cardText">A simple documentation page</p>
-            <a
-              className="btn-primary"
-              href="https://codepen.io/jpvajda/pen/xxxjoVN"
-            >
-              CodePen
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Quote Machine </h3>
-            <p className="cardText">A simple quote application</p>
-            <a
-              className="btn-primary"
-              href="https://codepen.io/jpvajda/pen/ExaxeYL"
-            >
-              CodePen
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Markdown Previewer </h3>
-            <p className="cardText">A simple markdown application</p>
-            <a
-              className="btn-primary"
-              href="https://codepen.io/jpvajda/pen/wvBaWBx"
-            >
-              CodePen
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Drum Machine </h3>
-            <p className="cardText">A drum machine application</p>
-            <a
-              className="btn-primary"
-              href="https://codepen.io/jpvajda/pen/LYEpLvj"
-            >
-              CodePen
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Pomodoro Clock </h3>
-            <p className="cardText">A pomodoro clock application</p>
-            <a
-              className="btn-primary"
-              href="https://codepen.io/jpvajda/pen/zYxKpbG"
-            >
-              CodePen
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:API and Microservice Projects </h3>
-            <p className="cardText">An API project</p>
-            <a className="btn-primary" href="https://glitch.com/@jpvajda">
-              Glitch
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:Information Security and QA Projects{" "}
-            </h3>
-            <p className="cardText">A QA and security project</p>
-            <a className="btn-primary" href="https://glitch.com/@jpvajda">
-              Glitch
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">Python Games </h3>
-            <p className="cardText">Simple games built with Python</p>
-            <a
-              className="btn-primary"
-              href="https://github.com/jpvajda/python/tree/master/PythonGames"
-            >
-              Github
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">Netlify Lambda Function </h3>
-            <p className="cardText">An example Lambda function on Netlify</p>
-            <a
-              className="btn-primary"
-              href="https://jpvajda-github-io.netlify.com/.netlify/functions/lambdafunction"
-            >
-              Netlify
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Rock Paper Scissors </h3>
-            <p className="cardText">A Machine Learning Python project</p>
-            <a
-              className="btn-primary"
-              href="https://replit.com/@jpvajda/boilerplate-rock-paper-scissors?v=1"
-            >
-              Replit
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">FCC:Cat & Dog Image Classifier </h3>
-            <p className="cardText">A Machine Learning Python project</p>
-            <a
-              className="btn-primary"
-              href="https://colab.research.google.com/drive/11EF3V2zNub6jC_WekcJuVWNpCRSRuL4e#scrollTo=4IH86Ux_u7TZ"
-            >
-              Google Colab
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:Book Recommendation Engine using KNN{" "}
-            </h3>
-            <p className="cardText">A Machine Learning Python project</p>
-            <a
-              className="btn-primary"
-              href="https://colab.research.google.com/drive/12Zh-5yafVJsjj2VWEpcJ4FSxh3pAnBJl"
-            >
-              Google Colab
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:Linear Regression Health Costs Calculator{" "}
-            </h3>
-            <p className="cardText">A Machine Learning Python project</p>
-            <a
-              className="btn-primary"
-              href="https://colab.research.google.com/drive/18RGW7HsoW-D0AgF-2QFB-FfxfpzIieVr#scrollTo=Xe7RXH3N3CWU"
-            >
-              Google Colab
-            </a>
-          </div>
-        </div>
-
-        <div className="card terminal-window">
-          <img className="codeImage" src={codeImage} alt="Code" />
-          <div className="card-body">
-            <h3 className="cardTitle">
-              FCC:Neural Network SMS Text Classifier{" "}
-            </h3>
-            <p className="cardText">A Machine Learning Python project</p>
-            <a
-              className="btn-primary"
-              href="https://colab.research.google.com/drive/1PCilUlclc3SYDCbLa3aF4l9EdNvwzUPJ#scrollTo=Dxotov85SjsC"
-            >
-              Google Colab
-            </a>
+          {/* Project Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
         </div>
       </section>

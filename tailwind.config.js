@@ -56,6 +56,9 @@ export default {
           'to': { width: '100%' },
         },
       },
+      boxShadow: {
+        'terminal-glow': '0 4px 20px rgba(127, 255, 0, 0.3), 0 0 40px rgba(127, 255, 0, 0.1)',
+      },
     },
   },
   plugins: [headlessui],
