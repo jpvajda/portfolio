@@ -94,6 +94,15 @@ html {
   animation: blink 1s ease-in-out infinite;
 }
 
+/* Terminal button glow effect */
+.terminal-button-glow {
+  box-shadow: 0 0 10px rgba(127, 255, 0, 0.3);
+}
+
+.terminal-button-glow:hover {
+  box-shadow: 0 0 20px rgba(127, 255, 0, 0.6);
+}
+
 /* Custom scrollbar for terminal theme */
 ::-webkit-scrollbar {
   width: 8px;
