@@ -82,3 +82,32 @@ code {
   height: 0.75rem;
   border-radius: 9999px;
 }
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Terminal cursor blink for hero */
+.terminal-cursor-blink {
+  display: inline-block;
+  animation: blink 1s ease-in-out infinite;
+}
+
+/* Custom scrollbar for terminal theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--terminal-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--terminal-green-dim);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--terminal-green);
+}

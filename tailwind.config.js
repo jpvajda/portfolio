@@ -45,6 +45,7 @@ export default {
       animation: {
         'cursor-blink': 'blink 1s ease-in-out infinite',
         'typing': 'typing 3.5s steps(40, end)',
+        'fade-in': 'fadeIn 0.8s ease-out forwards',
       },
       keyframes: {
         blink: {
@@ -54,6 +55,10 @@ export default {
         typing: {
           'from': { width: '0' },
           'to': { width: '100%' },
+        },
+        fadeIn: {
+          'from': { opacity: '0', transform: 'translateY(10px)' },
+          'to': { opacity: '1', transform: 'translateY(0)' },
         },
       },
       boxShadow: {

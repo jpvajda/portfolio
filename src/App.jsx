@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import MyCarousel from "./components/MyCarousel";
+import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import ProjectCard from "./components/ProjectCard";
 import { projects } from "./data/projects";
@@ -26,7 +26,7 @@ function App() {
         <script src="newrelic.js"></script>
       </Helmet>
       <NavBar></NavBar>
-      <MyCarousel></MyCarousel>
+      <Hero></Hero>
       <section id="projects" className="projects py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
