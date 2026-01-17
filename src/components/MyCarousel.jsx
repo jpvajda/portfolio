@@ -1,4 +1,4 @@
-import Carousel from "react-bootstrap/esm/Carousel";
+import { Carousel } from "react-bootstrap";
 
 function MyCarousel() {
   return (

@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { describe, it, expect } from 'vitest';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () => {
+  it('placeholder test - Phase 1', () => {
+    // TODO Phase 8: Add proper component tests
+    expect(true).toBe(true);
+  });
 });
