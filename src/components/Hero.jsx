@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 /**
  * Hero Component - Terminal-themed hero section
- * 
+ *
  * Features:
  * - Terminal loading animation
  * - Typing effect for name and title
@@ -67,7 +67,7 @@ const Hero = () => {
           <div className="space-y-8">
             {/* Name with typing effect */}
             {showName && (
-              <div className="opacity-0 animate-fade-in">
+              <div className="animate-fade-in">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-terminal-text-primary font-mono mb-4">
                   &gt; John P. Vajda
                   <span className="terminal-cursor-blink text-terminal-green">_</span>
@@ -77,7 +77,7 @@ const Hero = () => {
 
             {/* Title/Role */}
             {showTitle && (
-              <div className="opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              <div className="animate-fade-in">
                 <p className="text-xl md:text-2xl lg:text-3xl text-terminal-green font-mono">
                   [ Developer Experience • Product Led Growth • Engineering Leader ]
                 </p>
@@ -86,7 +86,7 @@ const Hero = () => {
 
             {/* Bio */}
             {showBio && (
-              <div className="opacity-0 animate-fade-in space-y-6 mt-8" style={{ animationDelay: "0.4s" }}>
+              <div className="animate-fade-in space-y-6 mt-8">
                 <p className="text-base md:text-lg text-terminal-text-secondary font-mono max-w-2xl mx-auto">
                   I am an impact driven product led growth leader focused on building amazing Developer Experience.
                 </p>
@@ -115,7 +115,7 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         {showBio && (
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in" style={{ animationDelay: "1s" }}>
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in">
             <div className="flex flex-col items-center gap-2 text-terminal-text-tertiary">
               <span className="text-xs font-mono">scroll</span>
               <div className="w-px h-8 bg-terminal-green animate-bounce"></div>
