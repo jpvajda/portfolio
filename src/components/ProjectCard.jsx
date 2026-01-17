@@ -24,17 +24,20 @@ const ProjectCard = ({ project }) => {
       <div className="flex items-center gap-2 px-4 py-3 bg-terminal-bg-tertiary border-b border-terminal-bg-tertiary">
         <div className="flex gap-2">
           <span
-            className="w-3 h-3 rounded-full bg-terminal-red"
+            className="w-3 h-3 rounded-full"
+            style={{ backgroundColor: "#ff5555" }}
             aria-hidden="true"
             title="Close"
           ></span>
           <span
-            className="w-3 h-3 rounded-full bg-terminal-yellow"
+            className="w-3 h-3 rounded-full"
+            style={{ backgroundColor: "#ffff55" }}
             aria-hidden="true"
             title="Minimize"
           ></span>
           <span
-            className="w-3 h-3 rounded-full bg-terminal-green"
+            className="w-3 h-3 rounded-full"
+            style={{ backgroundColor: "#7FFF00" }}
             aria-hidden="true"
             title="Maximize"
           ></span>
@@ -84,7 +87,8 @@ const ProjectCard = ({ project }) => {
         {/* CTA Button */}
         <a
           href={link}
-          className="inline-block px-4 py-2 bg-transparent border border-terminal-green text-terminal-green font-mono text-sm rounded hover:bg-terminal-green hover:text-terminal-bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terminal-green focus:ring-offset-2 focus:ring-offset-terminal-bg-primary"
+          className="inline-block px-5 py-2.5 bg-transparent font-mono text-sm font-bold rounded terminal-button-glow hover:bg-terminal-green hover:text-terminal-bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terminal-green focus:ring-offset-2 focus:ring-offset-terminal-bg-primary"
+          style={{ border: "3px solid #7FFF00", color: "#7FFF00" }}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`View ${title} on ${linkText}`}

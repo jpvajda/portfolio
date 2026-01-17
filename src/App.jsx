@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import MyCarousel from "./components/MyCarousel";
+import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import ProjectCard from "./components/ProjectCard";
 import { projects } from "./data/projects";
@@ -26,7 +26,7 @@ function App() {
         <script src="newrelic.js"></script>
       </Helmet>
       <NavBar></NavBar>
-      <MyCarousel></MyCarousel>
+      <Hero></Hero>
       <section id="projects" className="projects py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
@@ -90,12 +90,12 @@ function App() {
           {/* Certifications Grid - 3 columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert) => (
-              <ProjectCard 
-                key={cert.id} 
+              <ProjectCard
+                key={cert.id}
                 project={{
                   ...cert,
                   title: `${cert.organization}: ${cert.title}`,
-                }} 
+                }}
               />
             ))}
           </div>
