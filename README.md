@@ -2,17 +2,16 @@
 
 A modern, terminal-themed portfolio website showcasing Developer Experience, Product Led Growth, and Engineering Leadership expertise.
 
-**Live Site:** https://jpvajda.github.io/portfolio  
+**Live Site:** https://jpvajda.github.io/portfolio
 **Repository:** https://github.com/jpvajda/portfolio
 
----
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
 - **Node.js** 18+ (LTS recommended)
-- **pnpm** 8+ (package manager)
+- **pnpm** 10+ (package manager)
 
 ### Installation
 
@@ -30,19 +29,17 @@ pnpm dev
 
 Visit `http://localhost:3000/portfolio/` in your browser.
 
----
-
 ## 🏗️ Architecture
 
 ### Tech Stack
 
-- **React** 19.2.3 - Modern React with hooks and concurrent features
-- **TypeScript** 5.9.3 - Type safety and developer experience
-- **Tailwind CSS** 4.1.18 - Utility-first CSS framework
-- **Vite** 5.4.21 - Fast build tool and dev server
-- **Vitest** 3.2.4 - Fast unit test framework
-- **Headless UI** 2.1.0 - Unstyled, accessible UI components
-- **Heroicons** 2.1.5 - Beautiful hand-crafted SVG icons
+- **React** - Modern React with hooks and concurrent features
+- **TypeScript** - Type safety and developer experience
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Fast build tool and dev server
+- **Vitest** - Fast unit test framework
+- **Headless UI** - Unstyled, accessible UI components
+- **Heroicons** - Beautiful hand-crafted SVG icons
 
 ### Project Structure
 
@@ -70,22 +67,6 @@ portfolio/
 ├── vite.config.js           # Vite configuration
 └── vitest.config.js         # Vitest configuration
 ```
-
-### Design System
-
-This portfolio uses a **terminal/command-line interface aesthetic** inspired by [adamslaker.dev](https://adamslaker.dev/).
-
-**Key Design Elements:**
-- Dark background with monospace typography
-- Terminal green (#7FFF00) accent color
-- macOS window chrome on cards (🔴 🟡 🟢)
-- Terminal syntax and command prompts
-- Bracket notation for tags [React] [TypeScript]
-
-**Complete design specifications:** See `refactor_specs/REDESIGN_REQUIREMENTS.md`
-
----
-
 ## 🧪 Testing
 
 ### Run Tests
@@ -101,12 +82,6 @@ pnpm test:watch
 pnpm test:coverage
 ```
 
-### Test Coverage Goals
-
-- Overall coverage: 80%+
-- Critical components: 90%+
-- New features: 100%
-
 ### Testing Stack
 
 - **Vitest** - Test runner
@@ -114,7 +89,6 @@ pnpm test:coverage
 - **@testing-library/user-event** - User interaction simulation
 - **@testing-library/jest-dom** - DOM matchers
 
----
 
 ## 📦 Build & Deployment
 
@@ -135,9 +109,7 @@ pnpm deploy
 
 This runs `pnpm build` then `gh-pages -d dist` to deploy to GitHub Pages.
 
-**Note:** The `homepage` field in `package.json` must be set to `https://jpvajda.github.io/portfolio` for GitHub Pages to work correctly.
-
----
+**Note:** The `homepage` field in `package.json` must be set to `https://jpvajda.github.io/portfolio` for GitHub Pages to work correctly
 
 ## 🛠️ Development
 
@@ -172,9 +144,7 @@ This project uses **Conventional Commits** format:
 - `style:` Formatting, CSS changes
 - `test:` Adding tests
 - `chore:` Maintenance tasks
-- `docs:` Documentation updates
-
----
+- `docs:` Documentation update
 
 ## 🤖 Agentic Development Process
 
@@ -211,43 +181,6 @@ The redesign was completed using Cursor's agent mode with the following approach
 - `refactor_specs/AGENTIC_WORKFLOW_PHASES.md` - Phase-by-phase breakdown
 - `refactor_specs/PORTFOLIO_REDESIGN_GUIDE.md` - Step-by-step guide
 
----
-
-## ♿ Accessibility
-
-This portfolio follows **WCAG 2.1 AA** accessibility standards:
-
-- ✅ Semantic HTML5 elements
-- ✅ ARIA labels throughout
-- ✅ Keyboard navigation support
-- ✅ Skip-to-content link
-- ✅ Screen reader compatibility
-- ✅ `prefers-reduced-motion` support
-- ✅ Proper color contrast ratios
-- ✅ Focus indicators visible
-
-**Target Lighthouse Scores:**
-- Accessibility: 95+
-- Performance: 90+
-- Best Practices: 95+
-- SEO: 95+
-
----
-
-## 📱 Responsive Design
-
-**Breakpoints:**
-- Mobile: 320px+
-- Tablet: 768px+
-- Desktop: 1024px+
-- Large Desktop: 1440px+
-
-**Grid Layouts:**
-- Competencies: 4 columns (desktop), 2 (tablet), 1 (mobile)
-- Skills: 4 columns (desktop), 2 (tablet), 1 (mobile)
-- Certifications: 3 columns (desktop), 2 (tablet), 1 (mobile)
-
----
 
 ## 🎨 Dark/Light Mode
 
@@ -258,24 +191,13 @@ The portfolio supports both dark and light modes:
 - **Persistence:** Preference saved to localStorage
 - **System Preference:** Respects `prefers-color-scheme` on first visit
 
----
 
 ## 📄 License
 
 This project is private and proprietary.
 
----
 
 ## 👤 Author
 
 **John P. Vajda**
 
-- GitHub: [@jpvajda](https://github.com/jpvajda)
-- LinkedIn: [johnpvajda](https://www.linkedin.com/in/johnpvajda)
-- X: [@johnpvajda](https://x.com/johnpvajda)
-- BlueSky: [johnpvajda.bsky.social](https://bsky.app/profile/johnpvajda.bsky.social)
-
----
-
-**Last Updated:** January 2026  
-**Version:** 0.4.0
