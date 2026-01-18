@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import * as HeroIcons from "@heroicons/react/24/outline";
 
-const SkillCard = ({ item }) => {
-  const { title, description, icon } = item;
+const GenericCard = ({ item }) => {
+  const { title, description, icon, link, linkText } = item;
 
   // Dynamically get the icon component from heroicons
   const IconComponent = HeroIcons[icon] || HeroIcons.CommandLineIcon;
@@ -11,7 +11,7 @@ const SkillCard = ({ item }) => {
   return (
     <article
       className="group relative bg-terminal-bg-secondary border border-terminal-bg-tertiary rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-terminal-glow"
-      aria-label={`${title} skill`}
+      aria-label={title}
     >
       {/* macOS Window Chrome */}
       <div className="flex items-center gap-2 px-4 py-3 bg-terminal-bg-tertiary border-b border-terminal-bg-tertiary">
@@ -53,22 +53,40 @@ const SkillCard = ({ item }) => {
         </h3>
 
         {/* Description */}
-        <p className="text-terminal-text-secondary text-sm text-center">
+        <p className="text-terminal-text-secondary text-sm text-center mb-4">
           {description}
         </p>
+
+        {/* Optional CTA Button */}
+        {link && linkText && (
+          <div className="flex justify-center mt-4">
+            <a
+              href={link}
+              className="inline-block px-5 py-2.5 bg-transparent font-mono text-sm font-bold rounded terminal-button-glow hover:bg-terminal-green hover:text-terminal-bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terminal-green focus:ring-offset-2 focus:ring-offset-terminal-bg-primary"
+              style={{ border: "3px solid #7FFF00", color: "#7FFF00" }}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${title} ${linkText}`}
+            >
+              {linkText}
+            </a>
+          </div>
+        )}
       </div>
     </article>
   );
 };
 
-SkillCard.propTypes = {
+GenericCard.propTypes = {
   item: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     category: PropTypes.string,
+    link: PropTypes.string,
+    linkText: PropTypes.string,
   }).isRequired,
 };
 
-export default SkillCard;
+export default GenericCard;

@@ -224,37 +224,28 @@ feat(certifications): redesign certifications with terminal window styling
 
 ---
 
-## ♿ Phase 7: Accessibility & Performance Optimization
+## ♿ Phase 7: Accessibility & Performance Optimization & Content clean up
 
 **Branch:** `feat/a11y-performance`
 **Estimated Commits:** 3-5
 **Risk Level:** Low (improvements only)
 
 ### Tasks:
-- [ ] Audit and fix color contrast issues (WCAG AA)
 - [ ] Add proper ARIA labels throughout
-- [ ] Implement keyboard navigation for all interactive elements
-- [ ] Add skip-to-content link
-- [ ] Test with screen reader
-- [ ] Optimize images (WebP, compression)
-- [ ] Implement code splitting
-- [ ] Add lazy loading for below-fold content
-- [ ] Optimize bundle size
-- [ ] Add loading states
 - [ ] Run Lighthouse audit and fix issues
 - [ ] Add prefers-reduced-motion support
 - [ ] Update SEO meta tags
+- [ ] Content Clean up, I will do this manually not an agent task.
 
 ### Success Criteria:
 - ✅ Lighthouse Accessibility score: 95+
 - ✅ Lighthouse Performance score: 90+
-- ✅ WCAG AA compliant
-- ✅ Keyboard navigation works fully
-- ✅ Bundle size optimized
+- ✅ All content is updated and accurate (not an agent tassk)
+
 
 ### PR Title:
 ```
-feat(a11y): improve accessibility and performance optimizations
+feat(a11y): improve accessibility and content clean up
 ```
 
 ---
@@ -269,14 +260,10 @@ feat(a11y): improve accessibility and performance optimizations
 - [ ] Remove Cypress tests (as per requirements)
 - [ ] Write comprehensive Jest unit tests
 - [ ] Test all components with React Testing Library
-- [ ] Test dark/light mode toggle
 - [ ] Test responsive behavior
-- [ ] Update README.md with new architecture
-- [ ] Document build process with Cursor Agents
-- [ ] Add screenshots to README
-- [ ] Document terminal design system
-- [ ] Create component documentation
-- [ ] Update deployment instructions
+- [ ] Update README.md with new architecture and developer instructions (quickstart)
+- [ ] Document build process using Cursor agent (how we did it)
+- [ ] Update deployment instructions for github pages
 
 ### Success Criteria:
 - ✅ Test coverage: 80%+

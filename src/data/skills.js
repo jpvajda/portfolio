@@ -7,68 +7,75 @@ export const skills = [
   {
     id: 1,
     title: "JavaScript / TypeScript",
-    description: "Modern JavaScript and TypeScript for web development",
+    description: "JavaScript and TypeScript programming",
     icon: "CodeBracketSquareIcon",
     category: "language"
   },
   {
     id: 2,
     title: "Python",
-    description: "Python for automation, APIs, and data analysis",
+    description: "Python programming",
     icon: "CommandLineIcon",
     category: "language"
   },
   {
     id: 3,
-    title: ".NET / Go",
-    description: "Backend development with .NET and Go",
+    title: ".NET",
+    description: ".NET programming",
     icon: "ServerIcon",
     category: "language"
   },
   {
     id: 4,
-    title: "API Design",
-    description: "RESTful and GraphQL API design and development",
-    icon: "CloudIcon",
-    category: "architecture"
+    title: "Go",
+    description: "Go programming",
+    icon: "BoltIcon",
+    category: "language"
   },
   {
     id: 5,
+    title: "API Design",
+    description: "OpenAPI and AsyncAPI design and documentation",
+    icon: "CodeBracketIcon",
+    category: "architecture"
+  },
+  {
+    id: 6,
     title: "SDK Development",
     description: "Building developer SDKs and client libraries",
     icon: "CubeIcon",
     category: "development"
   },
   {
-    id: 6,
+    id: 7,
     title: "Prompt Engineering",
-    description: "LLM prompt design and AI integration",
+    description: "LLM prompting and AI agentic coding",
     icon: "SparklesIcon",
     category: "ai"
   },
   {
-    id: 7,
+    id: 8,
     title: "Agentic Coding",
-    description: "AI-assisted development and agent workflows",
+    description: "AI-assisted development and agentic workflows",
     icon: "CpuChipIcon",
     category: "ai"
   },
   {
-    id: 8,
+    id: 9,
     title: "Cybersecurity",
     description: "Security best practices and authentication protocols",
     icon: "ShieldCheckIcon",
     category: "security"
   },
   {
-    id: 9,
-    title: "OSS Development",
+    id: 10,
+    title: "Open Source Advocacy",
     description: "Open source library development and maintenance",
     icon: "HeartIcon",
     category: "opensource"
   },
   {
-    id: 10,
+    id: 11,
     title: "UI/UX Design",
     description: "User interface and experience design",
     icon: "SwatchIcon",
