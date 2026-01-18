@@ -102,6 +102,11 @@ html {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  /* Disable marquee animation for reduced motion */
+  .animate-scroll-marquee {
+    animation: none !important;
+  }
 }
 
 /* Terminal cursor blink for hero */
@@ -141,6 +146,34 @@ html {
 
 .terminal-button-glow:hover {
   box-shadow: 0 0 20px rgba(127, 255, 0, 0.6);
+}
+
+/* Terminal card shadow on hover */
+@layer utilities {
+  .shadow-terminal-glow-subtle {
+    box-shadow: 0 4px 16px rgba(127, 255, 0, 0.25),
+      0 0 24px rgba(127, 255, 0, 0.12) !important;
+  }
+
+  /* Also define hover variant directly */
+  .hover\:shadow-terminal-glow-subtle:hover {
+    box-shadow: 0 4px 16px rgba(127, 255, 0, 0.25),
+      0 0 24px rgba(127, 255, 0, 0.12) !important;
+  }
+
+  /* Scrolling marquee animation */
+  .animate-scroll-marquee {
+    animation: scroll-marquee 60s linear infinite;
+  }
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Custom scrollbar for terminal theme */

@@ -63,6 +63,7 @@ export default {
       },
       boxShadow: {
         'terminal-glow': '0 4px 20px rgba(127, 255, 0, 0.3), 0 0 40px rgba(127, 255, 0, 0.1)',
+        'terminal-glow-subtle': '0 2px 12px rgba(127, 255, 0, 0.15), 0 0 20px rgba(127, 255, 0, 0.08)',
       },
     },
   },
