@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
+import WorkMarquee from "./components/WorkMarquee";
 import GenericCard from "./components/GenericCard";
 import { competencies } from "./data/competencies";
 import { skills } from "./data/skills";
@@ -60,6 +61,7 @@ function App() {
         Skip to main content
       </a>
       <NavBar></NavBar>
+      <WorkMarquee></WorkMarquee>
       <main id="main-content">
         <Hero></Hero>
 

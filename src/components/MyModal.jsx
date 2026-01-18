@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from "@headlessui/react";
+import {
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  Transition,
+  TransitionChild,
+} from "@headlessui/react";
 import { Fragment } from "react";
 
 function MyModal() {
@@ -8,7 +14,8 @@ function MyModal() {
   return (
     <>
       <button
-        className="btn-light terminal-text px-4 py-2 border border-terminal-green rounded hover:bg-terminal-bg-tertiary transition-colors"
+        className="btn-light terminal-text px-4 py-2 border border-terminal-green rounded terminal-button-glow hover:bg-terminal-green hover:text-terminal-bg-primary transition-all duration-200"
+        style={{ border: "3px solid #7FFF00", color: "#7FFF00" }}
         onClick={() => setIsOpen(true)}
         aria-label="Open contact dialog"
       >
@@ -49,7 +56,10 @@ function MyModal() {
               >
                 <DialogPanel className="terminal-window max-w-lg w-full transform transition-all">
                   <div className="flex justify-between items-center mb-4">
-                    <DialogTitle id="contact-dialog-title" className="terminal-text text-xl font-bold">
+                    <DialogTitle
+                      id="contact-dialog-title"
+                      className="terminal-text text-xl font-bold"
+                    >
                       Contact Me
                     </DialogTitle>
                     <button

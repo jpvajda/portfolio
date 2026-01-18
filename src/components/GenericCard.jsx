@@ -10,11 +10,11 @@ const GenericCard = ({ item }) => {
 
   return (
     <article
-      className="group relative bg-terminal-bg-secondary border border-terminal-bg-tertiary rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-terminal-glow"
+      className="group relative bg-terminal-bg-secondary border border-terminal-bg-tertiary rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-terminal-glow-subtle"
       aria-label={title}
     >
       {/* macOS Window Chrome */}
-      <div className="flex items-center gap-2 px-4 py-3 bg-terminal-bg-tertiary border-b border-terminal-bg-tertiary">
+      <div className="flex items-center gap-2 px-4 py-3 bg-terminal-bg-tertiary border-b border-terminal-bg-tertiary overflow-hidden rounded-t-lg">
         <div className="flex gap-2">
           <span
             className="w-3 h-3 rounded-full"
