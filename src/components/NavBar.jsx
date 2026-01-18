@@ -3,7 +3,6 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import ModeToggle from "./ModeToggle";
 
 function NavBar() {
   return (
@@ -25,8 +24,7 @@ function NavBar() {
             {/* Desktop Navigation */}
             <div
               className="hidden md:flex items-center gap-6"
-              role="navigation"
-              aria-label="Main navigation links"
+              aria-label="Desktop navigation links"
             >
               <a
                 className="navLink terminal-text hover:text-terminal-green transition-colors"
@@ -49,7 +47,6 @@ function NavBar() {
               >
                 [Certifications]
               </a>
-              <ModeToggle />
             </div>
 
             {/* Mobile Menu Button */}
@@ -101,9 +98,6 @@ function NavBar() {
             >
               &gt; Certifications
             </a>
-            <div className="pt-2">
-              <ModeToggle />
-            </div>
           </DisclosurePanel>
         </>
       )}

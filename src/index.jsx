@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App.jsx";
 import reportWebVitals from "./reportWebVitals";
 
+// Always apply dark mode class for terminal theme (no light mode)
+document.documentElement.classList.add("dark");
+
 const container = document.getElementById("root");
 const root = createRoot(container);
 
