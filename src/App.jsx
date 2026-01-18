@@ -3,8 +3,9 @@ import { Helmet } from "react-helmet";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import ProjectCard from "./components/ProjectCard";
-import { projects } from "./data/projects";
-import { references } from "./data/references";
+import SkillCard from "./components/SkillCard";
+import { competencies } from "./data/competencies";
+import { skills } from "./data/skills";
 import { certifications } from "./data/certifications";
 import Footer from "./components/Footer";
 
@@ -22,51 +23,49 @@ function App() {
           href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
           rel="stylesheet"
         />
-        {/* new relic script for data tracking */}
-        <script src="newrelic.js"></script>
       </Helmet>
       <NavBar></NavBar>
       <Hero></Hero>
-      <section id="projects" className="projects py-16 px-4 md:px-8 lg:px-16">
+
+      {/* Core Competencies Section */}
+      <section
+        id="competencies"
+        className="competencies py-8 px-4 md:px-8 lg:px-16"
+      >
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
-              &gt; cd ~/projects
-            </h1>
-            <p className="text-terminal-text-secondary font-mono text-sm">
-              john@portfolio:~/projects$ ls -la
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
+              /competencies
+            </h2>
           </div>
 
-          {/* Project Grid - 3 columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+          {/* Competencies Grid - 4 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {competencies.map((competency) => (
+              <SkillCard key={competency.id} item={competency} />
             ))}
           </div>
         </div>
       </section>
 
+      {/* Technical Skills Section */}
       <section
-        id="references"
-        className="references py-16 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
+        id="skills"
+        className="skills py-8 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
       >
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
-              &gt; cd ~/links
-            </h1>
-            <p className="text-terminal-text-secondary font-mono text-sm">
-              john@portfolio:~/links$ ls -la
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
+              /skills
+            </h2>
           </div>
 
-          {/* References Grid - 3 columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {references.map((reference) => (
-              <ProjectCard key={reference.id} project={reference} />
+          {/* Skills Grid - 4 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {skills.map((skill) => (
+              <SkillCard key={skill.id} item={skill} />
             ))}
           </div>
         </div>
@@ -74,17 +73,14 @@ function App() {
 
       <section
         id="certifications"
-        className="certifications py-16 px-4 md:px-8 lg:px-16"
+        className="certifications py-8 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
       >
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
-              &gt; cd ~/certifications
-            </h1>
-            <p className="text-terminal-text-secondary font-mono text-sm">
-              john@portfolio:~/certifications$ ls -la
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
+              /certifications
+            </h2>
           </div>
 
           {/* Certifications Grid - 3 columns */}
@@ -95,6 +91,7 @@ function App() {
                 project={{
                   ...cert,
                   title: `${cert.organization}: ${cert.title}`,
+                  icon: "ClipboardDocumentCheckIcon",
                 }}
               />
             ))}
