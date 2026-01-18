@@ -25,9 +25,6 @@ function ModeToggle() {
 
   return (
     <div className="flex items-center gap-3">
-      <span className="text-terminal-text-secondary text-sm">
-        {darkMode ? "Dark" : "Light"}
-      </span>
       <Switch
         checked={darkMode}
         onChange={setDarkMode}

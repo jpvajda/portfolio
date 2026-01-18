@@ -35,9 +35,6 @@ const SkillCard = ({ item }) => {
             title="Maximize"
           ></span>
         </div>
-        <span className="text-xs text-terminal-text-tertiary font-mono ml-2">
-          ~/skills/{title.toLowerCase().replace(/[^a-z0-9]/g, "-")}
-        </span>
       </div>
 
       {/* Card Content */}
@@ -52,7 +49,7 @@ const SkillCard = ({ item }) => {
 
         {/* Title */}
         <h3 className="text-lg font-bold text-terminal-text-primary mb-3 font-mono text-center">
-          &gt; {title}
+          {title}
         </h3>
 
         {/* Description */}

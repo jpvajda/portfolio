@@ -1,21 +1,16 @@
+import MyModal from "./MyModal";
+
 /**
  * Hero Component - Terminal-themed hero section
  * Simple text display with terminal aesthetic
  */
 const Hero = () => {
-  const scrollToProjects = () => {
-    const projectsSection = document.getElementById("projects");
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <section className="hero min-h-screen flex items-center justify-center px-4 md:px-8">
+    <section className="hero py-16 flex items-center justify-center px-4 md:px-8">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Name */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-terminal-text-primary font-mono">
-          &gt; John P. Vajda
+          John P. Vajda
         </h1>
 
         {/* Title/Role */}
@@ -34,15 +29,10 @@ const Hero = () => {
             building products developers actually{" "}
             <span className="text-terminal-green">❤️</span> to use.
           </p>
-          {/* CTA Button */}
-          <button
-            onClick={scrollToProjects}
-            className="mt-8 inline-block px-8 py-3 bg-transparent font-mono text-sm md:text-base font-bold rounded terminal-button-glow hover:bg-terminal-green hover:text-terminal-bg-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-terminal-green focus:ring-offset-2 focus:ring-offset-terminal-bg-primary"
-            style={{ border: "3px solid #7FFF00", color: "#7FFF00" }}
-            aria-label="View my projects"
-          >
-            &gt; view_projects()
-          </button>
+          {/* Contact Button */}
+          <div className="mt-4">
+            <MyModal />
+          </div>
         </div>
       </div>
     </section>

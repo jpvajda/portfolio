@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import codeImage from "../assets/code-image.png";
+import * as HeroIcons from "@heroicons/react/24/outline";
 
 /**
  * ProjectCard - Terminal window styled project card
@@ -13,7 +14,10 @@ import codeImage from "../assets/code-image.png";
  * - Terminal cursor effect
  */
 const ProjectCard = ({ project }) => {
-  const { title, description, link, linkText, path, tags } = project;
+  const { title, description, link, linkText, path, tags, icon } = project;
+
+  // Get icon component if provided, otherwise use default image
+  const IconComponent = icon ? HeroIcons[icon] : null;
 
   return (
     <article
@@ -42,26 +46,30 @@ const ProjectCard = ({ project }) => {
             title="Maximize"
           ></span>
         </div>
-        <span className="text-xs text-terminal-text-tertiary font-mono ml-2">
-          {path}
-        </span>
       </div>
 
       {/* Card Content */}
       <div className="p-6">
-        {/* Project Image */}
+        {/* Project Image or Icon */}
         <div className="flex justify-center mb-4">
-          <img
-            className="w-24 h-24 object-contain opacity-80 group-hover:opacity-100 transition-opacity"
-            src={codeImage}
-            alt={`${title} icon`}
-            loading="lazy"
-          />
+          {IconComponent ? (
+            <IconComponent
+              className="w-24 h-24 text-terminal-green opacity-80 group-hover:opacity-100 transition-opacity"
+              aria-hidden="true"
+            />
+          ) : (
+            <img
+              className="w-24 h-24 object-contain opacity-80 group-hover:opacity-100 transition-opacity"
+              src={codeImage}
+              alt={`${title} icon`}
+              loading="lazy"
+            />
+          )}
         </div>
 
         {/* Project Title */}
         <h3 className="text-xl font-bold text-terminal-text-primary mb-3 font-mono">
-          &gt; {title}
+          {title}
         </h3>
 
         {/* Project Description */}
@@ -93,7 +101,7 @@ const ProjectCard = ({ project }) => {
           rel="noopener noreferrer"
           aria-label={`View ${title} on ${linkText}`}
         >
-          &gt; {linkText}
+          {linkText}
         </a>
       </div>
     </article>
@@ -110,6 +118,7 @@ ProjectCard.propTypes = {
     path: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
     category: PropTypes.string,
+    icon: PropTypes.string,
   }).isRequired,
 };
 

@@ -43,10 +43,11 @@ code {
 
 .terminal-cursor {
   display: inline-block;
-  width: 0.5rem;
+  width: 0.2rem;
   height: 1.25rem;
   background-color: var(--terminal-green);
   animation: blink 1s ease-in-out infinite;
+  margin-left: 0.5rem;
 }
 
 @keyframes blink {

@@ -6,7 +6,6 @@ import ProjectCard from "./components/ProjectCard";
 import SkillCard from "./components/SkillCard";
 import { competencies } from "./data/competencies";
 import { skills } from "./data/skills";
-import { references } from "./data/references";
 import { certifications } from "./data/certifications";
 import Footer from "./components/Footer";
 
@@ -63,31 +62,10 @@ function App() {
             </h2>
           </div>
 
-          {/* Skills Grid - 5 columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          {/* Skills Grid - 4 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skills.map((skill) => (
               <SkillCard key={skill.id} item={skill} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="references"
-        className="references py-8 px-4 md:px-8 lg:px-16"
-      >
-        <div className="max-w-5xl mx-auto">
-          {/* Section Header */}
-          <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
-              /links
-            </h2>
-          </div>
-
-          {/* References Grid - 4 columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {references.map((reference) => (
-              <ProjectCard key={reference.id} project={reference} />
             ))}
           </div>
         </div>
@@ -113,6 +91,7 @@ function App() {
                 project={{
                   ...cert,
                   title: `${cert.organization}: ${cert.title}`,
+                  icon: "ClipboardDocumentCheckIcon",
                 }}
               />
             ))}
