@@ -233,14 +233,6 @@ feat(certifications): redesign certifications with terminal window styling
 ### Tasks:
 - [ ] Audit and fix color contrast issues (WCAG AA)
 - [ ] Add proper ARIA labels throughout
-- [ ] Implement keyboard navigation for all interactive elements
-- [ ] Add skip-to-content link
-- [ ] Test with screen reader
-- [ ] Optimize images (WebP, compression)
-- [ ] Implement code splitting
-- [ ] Add lazy loading for below-fold content
-- [ ] Optimize bundle size
-- [ ] Add loading states
 - [ ] Run Lighthouse audit and fix issues
 - [ ] Add prefers-reduced-motion support
 - [ ] Update SEO meta tags

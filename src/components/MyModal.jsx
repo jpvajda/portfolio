@@ -10,12 +10,18 @@ function MyModal() {
       <button
         className="btn-light terminal-text px-4 py-2 border border-terminal-green rounded hover:bg-terminal-bg-tertiary transition-colors"
         onClick={() => setIsOpen(true)}
+        aria-label="Open contact dialog"
       >
         CONTACT
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-50" onClose={() => setIsOpen(false)}>
+        <Dialog 
+          as="div" 
+          className="relative z-50" 
+          onClose={() => setIsOpen(false)}
+          aria-labelledby="contact-dialog-title"
+        >
           {/* Backdrop with fade transition */}
           <TransitionChild
             as={Fragment}
@@ -43,7 +49,7 @@ function MyModal() {
               >
                 <DialogPanel className="terminal-window max-w-lg w-full transform transition-all">
                   <div className="flex justify-between items-center mb-4">
-                    <DialogTitle className="terminal-text text-xl font-bold">
+                    <DialogTitle id="contact-dialog-title" className="terminal-text text-xl font-bold">
                       Contact Me
                     </DialogTitle>
                     <button
@@ -62,6 +68,7 @@ function MyModal() {
                       className="terminal-text underline hover:text-terminal-green-dim transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Visit John P. Vajda's LinkedIn profile (opens in new tab)"
                     >
                       LinkedIn
                     </a>{" "}

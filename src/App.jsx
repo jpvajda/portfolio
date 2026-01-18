@@ -13,29 +13,47 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>John P Vajda: Portfolio</title>
-        <link
-          rel="canonical"
-          href="http://localhost:3000/jpvajda/jpvajda-react.github.io"
-        />
+        <html lang="en" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="John P. Vajda - Developer Experience & Product Led Growth Leader. Portfolio showcasing competencies, technical skills, and certifications in developer relations, PLG, and engineering leadership." />
+        <meta name="keywords" content="Developer Relations, Developer Experience, Product Led Growth, PLG, Product Management, Engineering Leadership, JavaScript, TypeScript, Python, API Development" />
+        <meta name="author" content="John P. Vajda" />
+        <meta property="og:title" content="John P. Vajda - Developer Experience & Product Leader Portfolio" />
+        <meta property="og:description" content="Portfolio showcasing Developer Relations, Product Led Growth, and Engineering Leadership expertise." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jpvajda.github.io/portfolio" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="John P. Vajda - Developer Experience & Product Leader" />
+        <meta name="twitter:description" content="Portfolio showcasing Developer Relations, Product Led Growth, and Engineering Leadership expertise." />
+        <link rel="canonical" href="https://jpvajda.github.io/portfolio" />
         <link
           href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
           rel="stylesheet"
         />
+        <title>John P. Vajda - Developer Experience & Product Leader Portfolio</title>
       </Helmet>
-      <NavBar></NavBar>
-      <Hero></Hero>
-
-      {/* Core Competencies Section */}
-      <section
-        id="competencies"
-        className="competencies py-8 px-4 md:px-8 lg:px-16"
+      <a 
+        href="#main-content" 
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-terminal-green focus:text-terminal-bg-primary focus:font-mono focus:rounded"
+        aria-label="Skip to main content"
       >
+        Skip to main content
+      </a>
+      <NavBar></NavBar>
+      <main id="main-content">
+        <Hero></Hero>
+
+        {/* Core Competencies Section */}
+        <section
+          id="competencies"
+          className="competencies py-8 px-4 md:px-8 lg:px-16"
+          aria-labelledby="competencies-heading"
+        >
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
+            <h2 id="competencies-heading" className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
               /competencies
             </h2>
           </div>
@@ -53,11 +71,12 @@ function App() {
       <section
         id="skills"
         className="skills py-8 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
+        aria-labelledby="skills-heading"
       >
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
+            <h2 id="skills-heading" className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
               /skills
             </h2>
           </div>
@@ -74,11 +93,12 @@ function App() {
       <section
         id="certifications"
         className="certifications py-8 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
+        aria-labelledby="certifications-heading"
       >
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
+            <h2 id="certifications-heading" className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
               /certifications
             </h2>
           </div>
@@ -98,6 +118,7 @@ function App() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer></Footer>
     </div>

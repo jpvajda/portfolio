@@ -3,48 +3,80 @@ import ModeToggle from "./ModeToggle";
 
 function NavBar() {
   return (
-    <Disclosure as="nav" className="navbar terminal-window">
+    <Disclosure as="nav" className="navbar terminal-window" aria-label="Main navigation">
       {({ open }) => (
         <>
           <div className="flex justify-between items-center">
-            <a href="#name" className="navbar-brand terminal-text text-2xl font-bold hover:text-terminal-green-dim transition-colors">
-              &gt; John P. Vajda<span className="terminal-cursor">_</span>
+            <a 
+              href="#hero-heading" 
+              className="navbar-brand terminal-text text-2xl font-bold hover:text-terminal-green-dim transition-colors"
+              aria-label="Go to top of page"
+            >
+              &gt; John P. Vajda<span className="terminal-cursor" aria-hidden="true">_</span>
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-6">
-              <a className="navLink terminal-text hover:text-terminal-green transition-colors" href="#projects">
-                [Projects]
+            <div className="hidden md:flex items-center gap-6" role="navigation" aria-label="Main navigation links">
+              <a 
+                className="navLink terminal-text hover:text-terminal-green transition-colors" 
+                href="#competencies"
+                aria-label="Navigate to Core Competencies section"
+              >
+                [Competencies]
               </a>
-              <a className="navLink terminal-text hover:text-terminal-green transition-colors" href="#references">
-                [References]
+              <a 
+                className="navLink terminal-text hover:text-terminal-green transition-colors" 
+                href="#skills"
+                aria-label="Navigate to Technical Skills section"
+              >
+                [Skills]
               </a>
-              <a className="navLink terminal-text hover:text-terminal-green transition-colors" href="#certifications">
+              <a 
+                className="navLink terminal-text hover:text-terminal-green transition-colors" 
+                href="#certifications"
+                aria-label="Navigate to Certifications section"
+              >
                 [Certifications]
               </a>
               <ModeToggle />
             </div>
 
             {/* Mobile Menu Button */}
-            <DisclosureButton className="md:hidden text-terminal-green hover:text-terminal-green-dim focus:outline-none focus:ring-2 focus:ring-terminal-green">
-              <span className="sr-only">Open menu</span>
+            <DisclosureButton 
+              className="md:hidden text-terminal-green hover:text-terminal-green-dim focus:outline-none focus:ring-2 focus:ring-terminal-green"
+              aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={open}
+            >
+              <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
               {open ? (
-                <span className="text-2xl">×</span>
+                <span className="text-2xl" aria-hidden="true">×</span>
               ) : (
-                <span className="text-xl">☰</span>
+                <span className="text-xl" aria-hidden="true">☰</span>
               )}
             </DisclosureButton>
           </div>
 
           {/* Mobile Navigation */}
-          <DisclosurePanel className="md:hidden mt-4 space-y-2">
-            <a className="block navLink terminal-text hover:text-terminal-green transition-colors py-2" href="#projects">
-              &gt; Projects
+          <DisclosurePanel className="md:hidden mt-4 space-y-2" aria-label="Mobile navigation menu">
+            <a 
+              className="block navLink terminal-text hover:text-terminal-green transition-colors py-2" 
+              href="#competencies"
+              aria-label="Navigate to Core Competencies section"
+            >
+              &gt; Competencies
             </a>
-            <a className="block navLink terminal-text hover:text-terminal-green transition-colors py-2" href="#references">
-              &gt; References
+            <a 
+              className="block navLink terminal-text hover:text-terminal-green transition-colors py-2" 
+              href="#skills"
+              aria-label="Navigate to Technical Skills section"
+            >
+              &gt; Skills
             </a>
-            <a className="block navLink terminal-text hover:text-terminal-green transition-colors py-2" href="#certifications">
+            <a 
+              className="block navLink terminal-text hover:text-terminal-green transition-colors py-2" 
+              href="#certifications"
+              aria-label="Navigate to Certifications section"
+            >
               &gt; Certifications
             </a>
             <div className="pt-2">

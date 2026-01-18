@@ -7,6 +7,7 @@ function Footer() {
     <footer
       className="footer py-8 px-4 md:px-8 lg:px-16"
       style={{ backgroundColor: "var(--terminal-bg-secondary)" }}
+      aria-label="Site footer"
     >
       <div className="max-w-5xl mx-auto text-center space-y-6">
         {/* Social Links */}
