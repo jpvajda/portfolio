@@ -20,18 +20,24 @@ export const companies = [
     name: "JumpCloud",
     icon: "BuildingOffice2Icon",
   },
+
   {
     id: 5,
-    name: "New Relic",
+    name: "Ethopass",
     icon: "BuildingOffice2Icon",
   },
   {
     id: 6,
-    name: "Apollo GraphQL",
+    name: "New Relic",
     icon: "BuildingOffice2Icon",
   },
   {
     id: 7,
+    name: "Apollo GraphQL",
+    icon: "BuildingOffice2Icon",
+  },
+  {
+    id: 8,
     name: "Deepgram",
     icon: "BuildingOffice2Icon",
   },
