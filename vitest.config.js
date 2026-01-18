@@ -12,5 +12,16 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/setupTests.js',
     css: false, // Skip CSS processing in tests for now
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      exclude: [
+        'node_modules/',
+        'src/setupTests.js',
+        '**/*.test.{js,jsx}',
+        '**/dist/**',
+        '**/build/**',
+      ],
+    },
   },
 })

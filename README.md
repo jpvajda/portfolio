@@ -1,86 +1,281 @@
-# Node version
+# John P. Vajda - Portfolio
 
- `"node-sass": "^4.14.1"` requires `Node 14` to work properly. You can use `NVM` to manage different Node versions locally.
+A modern, terminal-themed portfolio website showcasing Developer Experience, Product Led Growth, and Engineering Leadership expertise.
 
- # Using Cypress for testing
+**Live Site:** https://jpvajda.github.io/portfolio  
+**Repository:** https://github.com/jpvajda/portfolio
 
-* In the terminal run `npx cypress open` to open the [Cypress Testing App](https://docs.cypress.io/guides/getting-started/opening-the-app)
-* In the terminal run `npx cypress run --record --key xxxx`
+---
 
-# Getting Started with Create React App
+## 🚀 Quick Start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Prerequisites
 
-## Available Scripts
+- **Node.js** 18+ (LTS recommended)
+- **pnpm** 8+ (package manager)
 
-In the project directory, you can run:
+### Installation
 
-### `yarn start`
+```bash
+# Clone the repository
+git clone https://github.com/jpvajda/portfolio.git
+cd portfolio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Install dependencies
+pnpm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Start development server
+pnpm dev
+```
 
-### `yarn test`
+Visit `http://localhost:3000/portfolio/` in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn deploy`
+## 🏗️ Architecture
 
-> This must be run to ensure Github Pages kicks off a build correctly and update the site.
+### Tech Stack
 
-will run `gh-pages -d build` which builds the app for production to the `build` folder.\
-In order to get Github pages to deploy a change this should be run before pushing a commit.
+- **React** 19.2.3 - Modern React with hooks and concurrent features
+- **TypeScript** 5.9.3 - Type safety and developer experience
+- **Tailwind CSS** 4.1.18 - Utility-first CSS framework
+- **Vite** 5.4.21 - Fast build tool and dev server
+- **Vitest** 3.2.4 - Fast unit test framework
+- **Headless UI** 2.1.0 - Unstyled, accessible UI components
+- **Heroicons** 2.1.5 - Beautiful hand-crafted SVG icons
 
-### `yarn build`
+### Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+portfolio/
+├── src/
+│   ├── components/          # React components
+│   │   ├── GenericCard.jsx  # Reusable card component (competencies, skills, certs)
+│   │   ├── Hero.jsx         # Hero section
+│   │   ├── NavBar.jsx       # Navigation bar
+│   │   ├── Footer.jsx       # Footer with social links
+│   │   ├── ModeToggle.jsx   # Dark/light mode toggle
+│   │   └── MyModal.jsx      # Contact modal
+│   ├── data/                # Data files
+│   │   ├── competencies.js  # Core competencies data
+│   │   ├── skills.js         # Technical skills data
+│   │   ├── certifications.js # Certifications data
+│   │   └── references.js     # Social links data
+│   ├── assets/              # Images and static assets
+│   ├── index.css            # Global styles and CSS variables
+│   └── App.jsx              # Main app component
+├── public/                  # Static files
+├── refactor_specs/          # Design and workflow documentation
+├── tailwind.config.js       # Tailwind configuration
+├── vite.config.js           # Vite configuration
+└── vitest.config.js         # Vitest configuration
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Design System
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This portfolio uses a **terminal/command-line interface aesthetic** inspired by [adamslaker.dev](https://adamslaker.dev/).
 
-### `yarn eject`
+**Key Design Elements:**
+- Dark background with monospace typography
+- Terminal green (#7FFF00) accent color
+- macOS window chrome on cards (🔴 🟡 🟢)
+- Terminal syntax and command prompts
+- Bracket notation for tags [React] [TypeScript]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Complete design specifications:** See `refactor_specs/REDESIGN_REQUIREMENTS.md`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🧪 Testing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Run Tests
 
-## Learn More
+```bash
+# Run all tests
+pnpm test
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run tests in watch mode
+pnpm test:watch
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run tests with coverage
+pnpm test:coverage
+```
 
-### Code Splitting
+### Test Coverage Goals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Overall coverage: 80%+
+- Critical components: 90%+
+- New features: 100%
 
-### Analyzing the Bundle Size
+### Testing Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Vitest** - Test runner
+- **React Testing Library** - Component testing
+- **@testing-library/user-event** - User interaction simulation
+- **@testing-library/jest-dom** - DOM matchers
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📦 Build & Deployment
 
-### Advanced Configuration
+### Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+pnpm build
+```
 
-### Deployment
+Build output goes to `dist/` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Deploy to GitHub Pages
 
-### `yarn build` fails to minify
+```bash
+# Build and deploy
+pnpm deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This runs `pnpm build` then `gh-pages -d dist` to deploy to GitHub Pages.
+
+**Note:** The `homepage` field in `package.json` must be set to `https://jpvajda.github.io/portfolio` for GitHub Pages to work correctly.
+
+---
+
+## 🛠️ Development
+
+### Available Scripts
+
+- `pnpm dev` - Start development server (Vite)
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build locally
+- `pnpm test` - Run tests once
+- `pnpm test:watch` - Run tests in watch mode
+- `pnpm test:coverage` - Run tests with coverage report
+- `pnpm deploy` - Build and deploy to GitHub Pages
+
+### Code Style
+
+- **Components:** PascalCase (e.g., `GenericCard.jsx`)
+- **Hooks:** camelCase with 'use' prefix (e.g., `useTheme.js`)
+- **Utilities:** camelCase (e.g., `formatDate.js`)
+- **Constants:** UPPER_SNAKE_CASE (e.g., `API_URL`)
+
+### Git Workflow
+
+This project uses **Conventional Commits** format:
+
+```
+<type>(<scope>): <description>
+```
+
+**Types:**
+- `feat:` New feature
+- `fix:` Bug fix
+- `style:` Formatting, CSS changes
+- `test:` Adding tests
+- `chore:` Maintenance tasks
+- `docs:` Documentation updates
+
+---
+
+## 🤖 Agentic Development Process
+
+This portfolio was redesigned using **Cursor AI agents** following a multi-phase, multi-PR workflow.
+
+### Development Phases
+
+1. **Phase 1:** Modernize dependencies (React 19, Tailwind, TypeScript)
+2. **Phase 2:** Terminal design system & CSS variables
+3. **Phase 3:** Modernize core components to React 19
+4. **Phase 4:** Terminal-style project cards redesign
+5. **Phase 5:** Hero section & navigation
+6. **Phase 6:** CSS improvements & visual polish
+7. **Phase 7:** Accessibility & performance optimization
+8. **Phase 8:** Testing & documentation
+
+Each phase was developed on a separate feature branch with its own PR, simulating an autonomous agentic development workflow.
+
+**See `refactor_specs/AGENTIC_WORKFLOW_PHASES.md` for complete workflow documentation.**
+
+### How It Was Built
+
+The redesign was completed using Cursor's agent mode with the following approach:
+
+1. **Planning:** Created comprehensive requirements documents (`REDESIGN_REQUIREMENTS.md`, `AGENTS.md`)
+2. **Phased Development:** Broke work into 8 logical phases, each with clear success criteria
+3. **Incremental PRs:** Each phase resulted in a separate PR for review
+4. **Agent Autonomy:** Agents worked autonomously on each phase, making commits and creating PRs
+5. **Continuous Testing:** Tests run after each major change to ensure stability
+
+**Key Documents:**
+- `AGENTS.md` - Agent instructions and coding standards
+- `refactor_specs/REDESIGN_REQUIREMENTS.md` - Complete design and technical requirements
+- `refactor_specs/AGENTIC_WORKFLOW_PHASES.md` - Phase-by-phase breakdown
+- `refactor_specs/PORTFOLIO_REDESIGN_GUIDE.md` - Step-by-step guide
+
+---
+
+## ♿ Accessibility
+
+This portfolio follows **WCAG 2.1 AA** accessibility standards:
+
+- ✅ Semantic HTML5 elements
+- ✅ ARIA labels throughout
+- ✅ Keyboard navigation support
+- ✅ Skip-to-content link
+- ✅ Screen reader compatibility
+- ✅ `prefers-reduced-motion` support
+- ✅ Proper color contrast ratios
+- ✅ Focus indicators visible
+
+**Target Lighthouse Scores:**
+- Accessibility: 95+
+- Performance: 90+
+- Best Practices: 95+
+- SEO: 95+
+
+---
+
+## 📱 Responsive Design
+
+**Breakpoints:**
+- Mobile: 320px+
+- Tablet: 768px+
+- Desktop: 1024px+
+- Large Desktop: 1440px+
+
+**Grid Layouts:**
+- Competencies: 4 columns (desktop), 2 (tablet), 1 (mobile)
+- Skills: 4 columns (desktop), 2 (tablet), 1 (mobile)
+- Certifications: 3 columns (desktop), 2 (tablet), 1 (mobile)
+
+---
+
+## 🎨 Dark/Light Mode
+
+The portfolio supports both dark and light modes:
+
+- **Default:** Dark mode (terminal aesthetic)
+- **Toggle:** Available in navigation bar
+- **Persistence:** Preference saved to localStorage
+- **System Preference:** Respects `prefers-color-scheme` on first visit
+
+---
+
+## 📄 License
+
+This project is private and proprietary.
+
+---
+
+## 👤 Author
+
+**John P. Vajda**
+
+- GitHub: [@jpvajda](https://github.com/jpvajda)
+- LinkedIn: [johnpvajda](https://www.linkedin.com/in/johnpvajda)
+- X: [@johnpvajda](https://x.com/johnpvajda)
+- BlueSky: [johnpvajda.bsky.social](https://bsky.app/profile/johnpvajda.bsky.social)
+
+---
+
+**Last Updated:** January 2026  
+**Version:** 0.4.0
