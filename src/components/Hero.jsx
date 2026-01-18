@@ -6,13 +6,13 @@ import MyModal from "./MyModal";
  */
 const Hero = () => {
   return (
-    <section 
+    <section
       className="hero py-16 flex items-center justify-center px-4 md:px-8"
       aria-labelledby="hero-heading"
     >
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Name */}
-        <h1 
+        <h1
           id="hero-heading"
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-terminal-text-primary font-mono"
         >

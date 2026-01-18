@@ -16,9 +16,9 @@ function MyModal() {
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog 
-          as="div" 
-          className="relative z-50" 
+        <Dialog
+          as="div"
+          className="relative z-50"
           onClose={() => setIsOpen(false)}
           aria-labelledby="contact-dialog-title"
         >
@@ -60,7 +60,7 @@ function MyModal() {
                       ×
                     </button>
                   </div>
-                  
+
                   <div className="mb-4 text-terminal-text-primary">
                     Reach out to me on{" "}
                     <a
@@ -74,7 +74,7 @@ function MyModal() {
                     </a>{" "}
                     to connect!
                   </div>
-                  
+
                   <div className="flex justify-end">
                     <button
                       className="px-4 py-2 border border-terminal-text-secondary rounded hover:bg-terminal-bg-tertiary text-terminal-text-primary transition-colors"
