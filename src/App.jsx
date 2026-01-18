@@ -24,8 +24,6 @@ function App() {
           href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
           rel="stylesheet"
         />
-        {/* new relic script for data tracking */}
-        <script src="newrelic.js"></script>
       </Helmet>
       <NavBar></NavBar>
       <Hero></Hero>
@@ -39,11 +37,8 @@ function App() {
           {/* Section Header */}
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
-              &gt; cd ~/competencies
+              /competencies
             </h2>
-            <p className="text-terminal-text-secondary font-mono text-sm">
-              john@portfolio:~/competencies$ ls -la
-            </p>
           </div>
 
           {/* Competencies Grid - 4 columns */}
@@ -64,11 +59,8 @@ function App() {
           {/* Section Header */}
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
-              &gt; cd ~/skills
+              /skills
             </h2>
-            <p className="text-terminal-text-secondary font-mono text-sm">
-              john@portfolio:~/skills$ ls -la
-            </p>
           </div>
 
           {/* Skills Grid - 5 columns */}
@@ -88,11 +80,8 @@ function App() {
           {/* Section Header */}
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
-              &gt; cd ~/links
+              /links
             </h2>
-            <p className="text-terminal-text-secondary font-mono text-sm">
-              john@portfolio:~/links$ ls -la
-            </p>
           </div>
 
           {/* References Grid - 4 columns */}
@@ -112,11 +101,8 @@ function App() {
           {/* Section Header */}
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-terminal-text-primary font-mono mb-2">
-              &gt; cd ~/certifications
+              /certifications
             </h2>
-            <p className="text-terminal-text-secondary font-mono text-sm">
-              john@portfolio:~/certifications$ ls -la
-            </p>
           </div>
 
           {/* Certifications Grid - 3 columns */}
