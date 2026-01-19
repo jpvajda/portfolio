@@ -100,16 +100,30 @@ pnpm build
 
 Build output goes to `dist/` directory.
 
-### Deploy to GitHub Pages
+```bash
+pnpm preview
+```
+Runs production build.
+
+### Manual Deploy to GitHub Pages
 
 ```bash
-# Build and deploy
+# Build and deploy manually
 pnpm deploy
 ```
 
 This runs `pnpm build` then `gh-pages -d dist` to deploy to GitHub Pages.
 
 **Note:** The `homepage` field in `package.json` must be set to `https://jpvajda.github.io/portfolio` for GitHub Pages to work correctly
+
+### GitHub Actions CI/CD
+
+This repository uses GitHub Actions for automated testing and deployment:
+
+- **CI Workflow** (`.github/workflows/ci.yml`) - Runs tests on pull requests and pushes to `main`
+- **Deploy Workflow** (`.github/workflows/deploy.yml`) - Automatically builds and deploys to GitHub Pages when changes are pushed to `main`
+
+Both workflows run tests, install dependencies with pnpm, and use Node.js 20.
 
 ## 🛠️ Development
 
