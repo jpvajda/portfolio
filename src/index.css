@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/* Terminal Theme CSS Variables */
+:root {
+  --terminal-bg-primary: #0d0d0d;
+  --terminal-bg-secondary: #1a1a1a;
+  --terminal-bg-tertiary: #262626;
+  --terminal-text-primary: #e0e0e0;
+  --terminal-text-secondary: #a0a0a0;
+  --terminal-text-tertiary: #6b6b6b;
+  --terminal-green: #7fff00;
+  --terminal-green-dim: #4a9b00;
+  --terminal-green-glow: rgba(127, 255, 0, 0.2);
+  --terminal-red: #ff5555;
+  --terminal-yellow: #ffff55;
+  --terminal-blue: #5555ff;
+}
+
+/* Terminal Theme Base Styles */
+body {
+  margin: 0;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
+  background-color: var(--terminal-bg-primary);
+  color: var(--terminal-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
+  color: var(--terminal-green);
+}
+
+/* Terminal Aesthetic Utilities */
+.terminal-window {
+  background-color: var(--terminal-bg-secondary);
+  border: 1px solid var(--terminal-bg-tertiary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 0.2rem;
+  height: 1.25rem;
+  background-color: var(--terminal-green);
+  animation: blink 1s ease-in-out infinite;
+  margin-left: 0.5rem;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.terminal-glow {
+  box-shadow: 0 0 10px var(--terminal-green-glow);
+}
+
+.terminal-text {
+  color: var(--terminal-green);
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
+}
+
+.terminal-chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.terminal-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Smooth scroll behavior - respect reduced motion preference */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Disable marquee animation for reduced motion */
+  .animate-scroll-marquee {
+    animation: none !important;
+  }
+}
+
+/* Terminal cursor blink for hero */
+.terminal-cursor-blink {
+  display: inline-block;
+  animation: blink 1s ease-in-out infinite;
+}
+
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Terminal button glow effect */
+.terminal-button-glow {
+  box-shadow: 0 0 10px rgba(127, 255, 0, 0.3);
+}
+
+.terminal-button-glow:hover {
+  box-shadow: 0 0 20px rgba(127, 255, 0, 0.6);
+}
+
+/* Terminal card shadow on hover */
+@layer utilities {
+  .shadow-terminal-glow-subtle {
+    box-shadow: 0 4px 16px rgba(127, 255, 0, 0.25),
+      0 0 24px rgba(127, 255, 0, 0.12) !important;
+  }
+
+  /* Also define hover variant directly */
+  .hover\:shadow-terminal-glow-subtle:hover {
+    box-shadow: 0 4px 16px rgba(127, 255, 0, 0.25),
+      0 0 24px rgba(127, 255, 0, 0.12) !important;
+  }
+
+  /* Scrolling marquee animation */
+  .animate-scroll-marquee {
+    animation: scroll-marquee 60s linear infinite;
+  }
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Custom scrollbar for terminal theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--terminal-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--terminal-green-dim);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--terminal-green);
+}
