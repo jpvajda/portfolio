@@ -3,7 +3,6 @@
 A modern, terminal-themed portfolio website showcasing Developer Experience, Product Led Growth, and Engineering Leadership expertise.
 
 **Live Site:** https://jpvajda.github.io/portfolio
-**Repository:** https://github.com/jpvajda/portfolio
 
 
 ## 🚀 Quick Start
@@ -114,7 +113,7 @@ pnpm deploy
 
 This runs `pnpm build` then `gh-pages -d dist` to deploy to GitHub Pages.
 
-**Note:** The `homepage` field in `package.json` must be set to `https://jpvajda.github.io/portfolio` for GitHub Pages to work correctly
+> The `homepage` field in `package.json` must be set to `https://jpvajda.github.io/portfolio` for GitHub Pages to work correctly
 
 ### GitHub Actions CI/CD
 
@@ -162,20 +161,7 @@ This project uses **Conventional Commits** format:
 
 ## 🤖 Agentic Development Process
 
-This portfolio was redesigned using **Cursor AI agents** following a multi-phase, multi-PR workflow.
-
-### Development Phases
-
-1. **Phase 1:** Modernize dependencies (React 19, Tailwind, TypeScript)
-2. **Phase 2:** Terminal design system & CSS variables
-3. **Phase 3:** Modernize core components to React 19
-4. **Phase 4:** Terminal-style project cards redesign
-5. **Phase 5:** Hero section & navigation
-6. **Phase 6:** CSS improvements & visual polish
-7. **Phase 7:** Accessibility & performance optimization
-8. **Phase 8:** Testing & documentation
-
-Each phase was developed on a separate feature branch with its own PR, simulating an autonomous agentic development workflow.
+This portfolio was redesigned using **Cursor AI agents** following a multi-phase, multi-PR workflow. Each phase was developed on a separate feature branch with its own PR, simulating an autonomous agentic development workflow.
 
 **See `refactor_specs/AGENTIC_WORKFLOW_PHASES.md` for complete workflow documentation.**
 
@@ -189,26 +175,13 @@ The redesign was completed using Cursor's agent mode with the following approach
 4. **Agent Autonomy:** Agents worked autonomously on each phase, making commits and creating PRs
 5. **Continuous Testing:** Tests run after each major change to ensure stability
 
-**Key Documents:**
-- `AGENTS.md` - Agent instructions and coding standards
-- `refactor_specs/REDESIGN_REQUIREMENTS.md` - Complete design and technical requirements
-- `refactor_specs/AGENTIC_WORKFLOW_PHASES.md` - Phase-by-phase breakdown
-- `refactor_specs/PORTFOLIO_REDESIGN_GUIDE.md` - Step-by-step guide
-
-
-## 🎨 Dark/Light Mode
-
-The portfolio supports both dark and light modes:
-
-- **Default:** Dark mode (terminal aesthetic)
-- **Toggle:** Available in navigation bar
-- **Persistence:** Preference saved to localStorage
-- **System Preference:** Respects `prefers-color-scheme` on first visit
-
 
 ## 📄 License
 
-This project is private and proprietary.
+Copyright (c) 2026 John P. Vajda. All rights reserved.
+
+This project is private and proprietary. Unauthorized copying, modification,
+distribution, or use of this project, via any medium, is strictly prohibited.
 
 
 ## 👤 Author
