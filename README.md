@@ -100,7 +100,12 @@ pnpm build
 
 Build output goes to `dist/` directory.
 
-### Deploy to GitHub Pages
+```bash
+pnpm preview
+```
+Runs production build.
+
+### Manual Deploy to GitHub Pages
 
 ```bash
 # Build and deploy manually
