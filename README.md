@@ -33,7 +33,7 @@ Visit `http://localhost:3000/portfolio/` in your browser.
 ### Tech Stack
 
 - **React** - Modern React with hooks and concurrent features
-- **TypeScript** - Type safety and developer experience
+- **JavaScript** - Modern JS practices
 - **Tailwind CSS** - Utility-first CSS framework
 - **Vite** - Fast build tool and dev server
 - **Vitest** - Fast unit test framework
