@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .pnpm-store
-pnpm-lock.yaml
+# pnpm-lock.yaml should be committed for reproducible builds
 
 # testing
 /coverage
