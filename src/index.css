@@ -163,23 +163,27 @@ html {
 
   /* Scrolling marquee animation */
   .animate-scroll-marquee {
-    animation: scroll-marquee 30s linear infinite;
+    animation: scroll-marquee 40s linear infinite;
+    will-change: transform;
+    display: inline-flex;
+    backface-visibility: hidden;
+    perspective: 1000px;
   }
 
   /* Faster marquee on mobile and tablet devices (including iPads) */
   @media (max-width: 1023px) {
     .animate-scroll-marquee {
-      animation: scroll-marquee 10s linear infinite;
+      animation: scroll-marquee 40s linear infinite;
     }
   }
 }
 
 @keyframes scroll-marquee {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
