@@ -163,7 +163,14 @@ html {
 
   /* Scrolling marquee animation */
   .animate-scroll-marquee {
-    animation: scroll-marquee 60s linear infinite;
+    animation: scroll-marquee 30s linear infinite;
+  }
+
+  /* Faster marquee on mobile and tablet devices (including iPads) */
+  @media (max-width: 1023px) {
+    .animate-scroll-marquee {
+      animation: scroll-marquee 10s linear infinite;
+    }
   }
 }
 
