@@ -4,7 +4,6 @@ A modern, terminal-themed portfolio website showcasing Developer Experience, Pro
 
 **Live Site:** https://jpvajda.github.io/portfolio
 
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -175,14 +174,12 @@ The redesign was completed using Cursor's agent mode with the following approach
 4. **Agent Autonomy:** Agents worked autonomously on each phase, making commits and creating PRs
 5. **Continuous Testing:** Tests run after each major change to ensure stability
 
-
 ## 📄 License
 
 Copyright (c) 2026 John P. Vajda. All rights reserved.
 
 This project is private and proprietary. Unauthorized copying, modification,
 distribution, or use of this project, via any medium, is strictly prohibited.
-
 
 ## 👤 Author
 
