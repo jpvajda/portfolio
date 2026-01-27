@@ -4,7 +4,6 @@ A modern, terminal-themed portfolio website showcasing Developer Experience, Pro
 
 **Live Site:** https://jpvajda.github.io/portfolio
 
-
 ## 🚀 Quick Start
 
 ### Prerequisites
