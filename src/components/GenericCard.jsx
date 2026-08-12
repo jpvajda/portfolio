@@ -10,7 +10,7 @@ const GenericCard = ({ item }) => {
 
   return (
     <article
-      className="group relative bg-terminal-bg-secondary border border-terminal-bg-tertiary rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-terminal-glow-subtle"
+      className="group relative bg-terminal-bg-secondary border border-terminal-bg-tertiary rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-terminal-glow-subtle h-full flex flex-col"
       aria-label={title}
     >
       {/* macOS Window Chrome */}
@@ -38,7 +38,7 @@ const GenericCard = ({ item }) => {
       </div>
 
       {/* Card Content */}
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         {/* Icon */}
         <div className="flex justify-center mb-4">
           <IconComponent
@@ -59,7 +59,7 @@ const GenericCard = ({ item }) => {
 
         {/* Optional CTA Button */}
         {link && linkText && (
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-auto pt-2">
             <a
               href={link}
               className="inline-block px-5 py-2.5 bg-transparent font-mono text-sm font-bold rounded terminal-button-glow hover:bg-terminal-green hover:text-terminal-bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terminal-green focus:ring-offset-2 focus:ring-offset-terminal-bg-primary"

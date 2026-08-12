@@ -27,13 +27,7 @@ const Hero = () => {
         {/* Bio */}
         <div className="space-y-6 mt-8">
           <p className="text-base md:text-lg text-terminal-text-secondary font-mono max-w-2xl mx-auto">
-            Hey there! 👋 I' m an entrepreneur, startup veteran, product
-            manager, and developer who thrives at the intersection of code and
-            community. I've worn many hats: launched my own products, taken
-            ideas from 0 to 1, and rolled up my sleeves as a hands-on engineer.
-            My sweet spot? Developer Relations, Developer Experience, and
-            building products developers actually{" "}
-            <span className="text-terminal-green">❤️</span> to use.
+            Hey there! 👋  I'm a 0→1 builder with 14 years in Product, Developer Relations, and PLG growth, plus 10 years hands-on as an engineer. I've scaled APIs from hundreds to millions of requests, grown open-source communities from the ground up, and built the product and developer experience early-stage companies need from day one.
           </p>
           {/* Contact Button */}
           <div className="mt-4">
