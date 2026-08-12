@@ -41,4 +41,9 @@ export const companies = [
     name: "Deepgram",
     icon: "BuildingOffice2Icon",
   },
+  {
+    id: 9,
+    name: "Sixtyfour AI",
+    icon: "BuildingOffice2Icon",
+  },
 ];

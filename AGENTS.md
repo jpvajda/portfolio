@@ -5,7 +5,7 @@ This file defines rules and conventions for AI agents working on the portfolio r
 ## Project Context
 
 **Project:** John P Vajda Portfolio Website
-**Tech Stack:** R
+**Tech Stack:**
  - React 19.2.3,
  - Typscript 5.9.2,
  - Tailwind, 4.1.19
