@@ -32,6 +32,13 @@ describe("App", () => {
     expect(screen.getByRole("region", { name: /skills/i })).toBeInTheDocument();
   });
 
+  it("renders MCP Design skill card", () => {
+    render(<App />);
+    expect(
+      screen.getByRole("article", { name: /MCP Design/i })
+    ).toBeInTheDocument();
+  });
+
   it("renders certifications section", () => {
     render(<App />);
     expect(

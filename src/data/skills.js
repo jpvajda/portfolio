@@ -40,6 +40,13 @@ export const skills = [
     category: "architecture"
   },
   {
+    id: 12,
+    title: "MCP Design",
+    description: "Model Context Protocol servers, tools, and agent interfaces",
+    icon: "PuzzlePieceIcon",
+    category: "architecture"
+  },
+  {
     id: 6,
     title: "SDK Development",
     description: "Building developer SDKs and client libraries",
@@ -48,8 +55,8 @@ export const skills = [
   },
   {
     id: 7,
-    title: "Prompt Engineering",
-    description: "LLM prompting and AI agentic coding",
+    title: "Prompt / Context Engineering",
+    description: "LLM prompting and context design for AI systems",
     icon: "SparklesIcon",
     category: "ai"
   },
