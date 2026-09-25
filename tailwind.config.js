@@ -10,17 +10,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Terminal theme colors from REDESIGN_REQUIREMENTS.md
+        // Terminal green accent on warm charcoal.
         terminal: {
           bg: {
-            primary: '#0d0d0d',
-            secondary: '#1a1a1a',
-            tertiary: '#262626',
+            primary: '#12110f',
+            secondary: '#1c1a16',
+            tertiary: '#2c2823',
           },
           text: {
-            primary: '#e0e0e0',
-            secondary: '#a0a0a0',
-            tertiary: '#6b6b6b',
+            primary: '#f3efe8',
+            secondary: '#c4bdb3',
+            tertiary: '#9c958c',
           },
           green: {
             DEFAULT: '#7FFF00',
@@ -33,6 +33,12 @@ export default {
         },
       },
       fontFamily: {
+        sans: [
+          'Outfit',
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+        ],
         mono: [
           'JetBrains Mono',
           'Fira Code',
@@ -62,8 +68,8 @@ export default {
         },
       },
       boxShadow: {
-        'terminal-glow': '0 4px 20px rgba(127, 255, 0, 0.3), 0 0 40px rgba(127, 255, 0, 0.1)',
-        'terminal-glow-subtle': '0 2px 12px rgba(127, 255, 0, 0.15), 0 0 20px rgba(127, 255, 0, 0.08)',
+        'terminal-glow': '0 8px 28px rgba(127, 255, 0, 0.16), 0 0 40px rgba(127, 255, 0, 0.06)',
+        'terminal-glow-subtle': '0 8px 24px rgba(18, 17, 15, 0.45), 0 0 0 1px rgba(127, 255, 0, 0.28)',
       },
     },
   },

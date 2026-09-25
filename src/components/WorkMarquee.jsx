@@ -9,7 +9,7 @@ const WorkMarquee = () => {
 
   return (
     <section
-      className="work-marquee py-4 bg-terminal-bg-secondary border-b border-terminal-bg-tertiary"
+      className="work-marquee py-3 bg-terminal-bg-secondary border-b border-white/10"
       aria-label="Work experience companies"
     >
       <div className="w-full px-4 md:px-8 lg:px-16">
@@ -25,11 +25,10 @@ const WorkMarquee = () => {
                   className="flex items-center gap-3 px-8 flex-shrink-0"
                 >
                   <IconComponent
-                    className="w-5 h-5 text-terminal-green flex-shrink-0"
-                    style={{ color: '#7FFF00' }}
+                    className="w-4 h-4 text-terminal-green flex-shrink-0"
                     aria-hidden="true"
                   />
-                  <span className="text-terminal-green font-mono text-lg whitespace-nowrap">
+                  <span className="text-terminal-text-secondary font-mono text-sm whitespace-nowrap">
                     {company.name}
                   </span>
                 </div>
