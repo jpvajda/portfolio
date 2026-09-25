@@ -17,9 +17,14 @@ describe("GenericCard", () => {
     expect(screen.getByText("Test description")).toBeInTheDocument();
   });
 
-  it("renders macOS window chrome dots", () => {
+  it("renders a category label", () => {
     render(<GenericCard item={mockItem} />);
-    const dots = screen.getAllByTitle(/Close|Minimize|Maximize/);
+    expect(screen.getByText("language")).toBeInTheDocument();
+  });
+
+  it("renders three window dots in the card header", () => {
+    const { container } = render(<GenericCard item={mockItem} />);
+    const dots = container.querySelectorAll(".card-window-dots span");
     expect(dots).toHaveLength(3);
   });
 

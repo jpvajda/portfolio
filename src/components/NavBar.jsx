@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <Disclosure
       as="nav"
-      className="navbar terminal-window"
+      className="navbar sticky top-0 z-40 border-b border-white/10 bg-terminal-bg-secondary/85 backdrop-blur-md px-4 py-3 md:px-8"
       aria-label="Main navigation"
     >
       {({ open }) => (
@@ -27,21 +27,21 @@ function NavBar() {
               aria-label="Desktop navigation links"
             >
               <a
-                className="navLink terminal-text hover:text-terminal-green transition-colors"
+                className="navLink font-mono text-sm text-terminal-text-secondary hover:text-terminal-green transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green rounded-sm"
                 href="#competencies"
                 aria-label="Navigate to Core Competencies section"
               >
                 [Competencies]
               </a>
               <a
-                className="navLink terminal-text hover:text-terminal-green transition-colors"
+                className="navLink font-mono text-sm text-terminal-text-secondary hover:text-terminal-green transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green rounded-sm"
                 href="#skills"
                 aria-label="Navigate to Technical Skills section"
               >
                 [Skills]
               </a>
               <a
-                className="navLink terminal-text hover:text-terminal-green transition-colors"
+                className="navLink font-mono text-sm text-terminal-text-secondary hover:text-terminal-green transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green rounded-sm"
                 href="#certifications"
                 aria-label="Navigate to Certifications section"
               >
@@ -51,7 +51,7 @@ function NavBar() {
 
             {/* Mobile Menu Button */}
             <DisclosureButton
-              className="md:hidden text-terminal-green hover:text-terminal-green-dim focus:outline-none focus:ring-2 focus:ring-terminal-green"
+              className="md:hidden font-mono text-terminal-green hover:text-terminal-green-dim focus:outline-none focus:ring-2 focus:ring-terminal-green rounded-sm"
               aria-label={
                 open ? "Close navigation menu" : "Open navigation menu"
               }
@@ -78,21 +78,21 @@ function NavBar() {
             aria-label="Mobile navigation menu"
           >
             <a
-              className="block navLink terminal-text hover:text-terminal-green transition-colors py-2"
+              className="block navLink font-mono text-sm text-terminal-text-secondary hover:text-terminal-green transition-colors py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green rounded-sm"
               href="#competencies"
               aria-label="Navigate to Core Competencies section"
             >
               &gt; Competencies
             </a>
             <a
-              className="block navLink terminal-text hover:text-terminal-green transition-colors py-2"
+              className="block navLink font-mono text-sm text-terminal-text-secondary hover:text-terminal-green transition-colors py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green rounded-sm"
               href="#skills"
               aria-label="Navigate to Technical Skills section"
             >
               &gt; Skills
             </a>
             <a
-              className="block navLink terminal-text hover:text-terminal-green transition-colors py-2"
+              className="block navLink font-mono text-sm text-terminal-text-secondary hover:text-terminal-green transition-colors py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green rounded-sm"
               href="#certifications"
               aria-label="Navigate to Certifications section"
             >

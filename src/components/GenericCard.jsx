@@ -3,67 +3,52 @@ import PropTypes from "prop-types";
 import * as HeroIcons from "@heroicons/react/24/outline";
 
 const GenericCard = ({ item }) => {
-  const { title, description, icon, link, linkText } = item;
+  const { title, description, icon, link, linkText, category, organization } =
+    item;
 
-  // Dynamically get the icon component from heroicons
   const IconComponent = HeroIcons[icon] || HeroIcons.CommandLineIcon;
+  const label = category || organization;
 
   return (
     <article
-      className="group relative bg-terminal-bg-secondary border border-terminal-bg-tertiary rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-terminal-glow-subtle h-full flex flex-col"
+      className="panel group relative h-full flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-terminal-green/40"
       aria-label={title}
     >
-      {/* macOS Window Chrome */}
-      <div className="flex items-center gap-2 px-4 py-3 bg-terminal-bg-tertiary border-b border-terminal-bg-tertiary overflow-hidden rounded-t-lg">
-        <div className="flex gap-2">
-          <span
-            className="w-3 h-3 rounded-full"
-            style={{ backgroundColor: "#ff5555" }}
-            aria-hidden="true"
-            title="Close"
-          ></span>
-          <span
-            className="w-3 h-3 rounded-full"
-            style={{ backgroundColor: "#ffff55" }}
-            aria-hidden="true"
-            title="Minimize"
-          ></span>
-          <span
-            className="w-3 h-3 rounded-full"
-            style={{ backgroundColor: "#7FFF00" }}
-            aria-hidden="true"
-            title="Maximize"
-          ></span>
-        </div>
+      <div className="flex items-center gap-2.5 px-5 py-3 border-b border-white/10 text-terminal-green">
+        <span
+          className="card-window-dots flex shrink-0 items-center gap-1"
+          aria-hidden="true"
+        >
+          <span className="h-2.5 w-2.5 rounded-[2px] border border-current bg-current" />
+          <span className="h-2.5 w-2.5 rounded-[2px] border border-current bg-current" />
+          <span className="h-2.5 w-2.5 rounded-[2px] border border-current bg-current" />
+        </span>
+        {label && (
+          <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-terminal-green">
+            {label}
+          </span>
+        )}
       </div>
 
-      {/* Card Content */}
-      <div className="p-6 flex flex-col flex-1">
-        {/* Icon */}
-        <div className="flex justify-center mb-4">
-          <IconComponent
-            className="w-12 h-12 text-terminal-green opacity-80 group-hover:opacity-100 transition-opacity"
-            aria-hidden="true"
-          />
-        </div>
+      <div className="p-5 flex flex-col flex-1">
+        <IconComponent
+          className="w-8 h-8 text-terminal-green mb-4 opacity-90 group-hover:opacity-100 transition-opacity"
+          aria-hidden="true"
+        />
 
-        {/* Title */}
-        <h3 className="text-lg font-bold text-terminal-text-primary mb-3 font-mono text-center">
+        <h3 className="text-lg font-semibold text-terminal-text-primary mb-2 font-sans leading-snug">
           {title}
         </h3>
 
-        {/* Description */}
-        <p className="text-terminal-text-secondary text-sm text-center mb-4">
+        <p className="text-terminal-text-secondary text-sm leading-relaxed mb-4">
           {description}
         </p>
 
-        {/* Optional CTA Button */}
         {link && linkText && (
-          <div className="flex justify-center mt-auto pt-2">
+          <div className="mt-auto pt-2">
             <a
               href={link}
-              className="inline-block px-5 py-2.5 bg-transparent font-mono text-sm font-bold rounded terminal-button-glow hover:bg-terminal-green hover:text-terminal-bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terminal-green focus:ring-offset-2 focus:ring-offset-terminal-bg-primary"
-              style={{ border: "3px solid #7FFF00", color: "#7FFF00" }}
+              className="accent-button"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View ${title} ${linkText}`}
@@ -84,6 +69,7 @@ GenericCard.propTypes = {
     description: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     category: PropTypes.string,
+    organization: PropTypes.string,
     link: PropTypes.string,
     linkText: PropTypes.string,
   }).isRequired,

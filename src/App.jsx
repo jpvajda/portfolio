@@ -46,7 +46,7 @@ function App() {
         />
         <link rel="canonical" href="https://jpvajda.github.io/portfolio" />
         <link
-          href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
         <title>
@@ -68,7 +68,7 @@ function App() {
         {/* Core Competencies Section */}
         <section
           id="competencies"
-          className="competencies py-8 px-4 md:px-8 lg:px-16"
+          className="competencies py-14 px-4 md:px-8 lg:px-16"
           aria-labelledby="competencies-heading"
         >
           <div className="max-w-5xl mx-auto">
@@ -94,7 +94,7 @@ function App() {
         {/* Technical Skills Section */}
         <section
           id="skills"
-          className="skills py-8 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
+          className="skills py-14 px-4 md:px-8 lg:px-16"
           aria-labelledby="skills-heading"
         >
           <div className="max-w-5xl mx-auto">
@@ -119,7 +119,7 @@ function App() {
 
         <section
           id="certifications"
-          className="certifications py-8 px-4 md:px-8 lg:px-16 bg-terminal-bg-primary"
+          className="certifications py-14 px-4 md:px-8 lg:px-16"
           aria-labelledby="certifications-heading"
         >
           <div className="max-w-5xl mx-auto">

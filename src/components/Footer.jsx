@@ -5,8 +5,7 @@ import { references } from "../data/references";
 function Footer() {
   return (
     <footer
-      className="footer py-8 px-4 md:px-8 lg:px-16"
-      style={{ backgroundColor: "var(--terminal-bg-secondary)" }}
+      className="footer py-8 px-4 md:px-8 lg:px-16 border-t border-white/10 bg-terminal-bg-secondary"
       aria-label="Site footer"
     >
       <div className="max-w-5xl mx-auto text-center space-y-6">
@@ -18,7 +17,7 @@ function Footer() {
               href={reference.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="terminal-text text-terminal-green hover:text-terminal-green-dim transition-colors font-mono"
+              className="font-mono text-sm text-terminal-text-secondary hover:text-terminal-green transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green rounded-sm"
               aria-label={`Visit ${reference.title}`}
             >
               [{reference.title}]

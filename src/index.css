@@ -1,27 +1,32 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
-/* Terminal Theme CSS Variables */
+/* Warm charcoal + terminal green accent. `--terminal-green` is the accent token. */
 :root {
-  --terminal-bg-primary: #0d0d0d;
-  --terminal-bg-secondary: #1a1a1a;
-  --terminal-bg-tertiary: #262626;
-  --terminal-text-primary: #e0e0e0;
-  --terminal-text-secondary: #a0a0a0;
-  --terminal-text-tertiary: #6b6b6b;
+  --terminal-bg-primary: #12110f;
+  --terminal-bg-secondary: #1c1a16;
+  --terminal-bg-tertiary: #2c2823;
+  --terminal-text-primary: #f3efe8;
+  --terminal-text-secondary: #c4bdb3;
+  --terminal-text-tertiary: #9c958c;
   --terminal-green: #7fff00;
   --terminal-green-dim: #4a9b00;
   --terminal-green-glow: rgba(127, 255, 0, 0.2);
   --terminal-red: #ff5555;
   --terminal-yellow: #ffff55;
   --terminal-blue: #5555ff;
+  --terminal-line: rgba(243, 239, 232, 0.12);
 }
 
-/* Terminal Theme Base Styles */
+/* Base styles */
 body {
   margin: 0;
-  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
-    "Courier New", monospace;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   background-color: var(--terminal-bg-primary);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 100% -8%, rgba(127, 255, 0, 0.1), transparent 52%),
+    radial-gradient(ellipse 50% 40% at -8% 18%, rgba(36, 64, 18, 0.45), transparent 58%);
+  background-attachment: fixed;
   color: var(--terminal-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,11 +39,18 @@ code {
 }
 
 /* Terminal Aesthetic Utilities */
+.terminal-window,
+.panel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0) 32%),
+    linear-gradient(180deg, #24211c 0%, #1a1815 100%);
+  border: 1px solid var(--terminal-line);
+  border-radius: 0.75rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
 .terminal-window {
-  background-color: var(--terminal-bg-secondary);
-  border: 1px solid var(--terminal-bg-tertiary);
-  border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1.25rem;
 }
 
 .terminal-cursor {
@@ -87,6 +99,7 @@ code {
 /* Smooth scroll behavior - respect reduced motion preference */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -141,24 +154,48 @@ html {
 
 /* Terminal button glow effect */
 .terminal-button-glow {
-  box-shadow: 0 0 10px rgba(127, 255, 0, 0.3);
+  box-shadow: 0 0 0 1px rgba(127, 255, 0, 0.35);
 }
 
 .terminal-button-glow:hover {
-  box-shadow: 0 0 20px rgba(127, 255, 0, 0.6);
+  box-shadow: 0 8px 24px rgba(127, 255, 0, 0.22);
+}
+
+.accent-button {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid var(--terminal-green);
+  border-radius: 0.375rem;
+  background: transparent;
+  color: var(--terminal-green);
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Courier New", monospace;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.accent-button:hover {
+  background: var(--terminal-green);
+  color: var(--terminal-bg-primary);
+}
+
+.accent-button:focus-visible {
+  outline: 2px solid var(--terminal-green);
+  outline-offset: 3px;
 }
 
 /* Terminal card shadow on hover */
 @layer utilities {
   .shadow-terminal-glow-subtle {
-    box-shadow: 0 4px 16px rgba(127, 255, 0, 0.25),
-      0 0 24px rgba(127, 255, 0, 0.12) !important;
+    box-shadow: 0 8px 24px rgba(18, 17, 15, 0.45),
+      0 0 0 1px rgba(127, 255, 0, 0.28) !important;
   }
 
-  /* Also define hover variant directly */
   .hover\:shadow-terminal-glow-subtle:hover {
-    box-shadow: 0 4px 16px rgba(127, 255, 0, 0.25),
-      0 0 24px rgba(127, 255, 0, 0.12) !important;
+    box-shadow: 0 8px 24px rgba(18, 17, 15, 0.45),
+      0 0 0 1px rgba(127, 255, 0, 0.28) !important;
   }
 
   /* Scrolling marquee animation */

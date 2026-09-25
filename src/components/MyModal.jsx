@@ -14,8 +14,7 @@ function MyModal() {
   return (
     <>
       <button
-        className="btn-light terminal-text px-4 py-2 border border-terminal-green rounded terminal-button-glow hover:bg-terminal-green hover:text-terminal-bg-primary transition-all duration-200"
-        style={{ border: "3px solid #7FFF00", color: "#7FFF00" }}
+        className="accent-button"
         onClick={() => setIsOpen(true)}
         aria-label="Open contact dialog"
       >
@@ -58,12 +57,12 @@ function MyModal() {
                   <div className="flex justify-between items-center mb-4">
                     <DialogTitle
                       id="contact-dialog-title"
-                      className="terminal-text text-xl font-bold"
+                      className="font-sans text-xl font-semibold text-terminal-text-primary"
                     >
                       Contact Me
                     </DialogTitle>
                     <button
-                      className="text-terminal-green hover:text-terminal-green-dim text-2xl transition-colors"
+                      className="text-terminal-text-secondary hover:text-terminal-green text-2xl leading-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green rounded-sm"
                       onClick={() => setIsOpen(false)}
                       aria-label="Close dialog"
                     >
@@ -71,11 +70,11 @@ function MyModal() {
                     </button>
                   </div>
 
-                  <div className="mb-4 text-terminal-text-primary">
+                  <div className="mb-4 text-terminal-text-secondary font-sans">
                     Reach out to me on{" "}
                     <a
                       href="https://www.linkedin.com/in/johnpvajda/"
-                      className="terminal-text underline hover:text-terminal-green-dim transition-colors"
+                      className="text-terminal-green underline underline-offset-2 hover:text-terminal-text-primary transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Visit John P. Vajda's LinkedIn profile (opens in new tab)"
@@ -87,7 +86,7 @@ function MyModal() {
 
                   <div className="flex justify-end">
                     <button
-                      className="px-4 py-2 border border-terminal-text-secondary rounded hover:bg-terminal-bg-tertiary text-terminal-text-primary transition-colors"
+                      className="px-4 py-2 border border-white/15 rounded-md font-mono text-sm text-terminal-text-primary hover:border-terminal-green hover:text-terminal-green transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green"
                       onClick={() => setIsOpen(false)}
                     >
                       Close
