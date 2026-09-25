@@ -49,6 +49,16 @@ code {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
+.panel:hover {
+  background:
+    radial-gradient(95% 85% at 50% -8%, rgba(127, 255, 0, 0.32), transparent 58%),
+    linear-gradient(180deg, #2a3a1c 0%, #1c2418 46%, #141311 100%);
+  border-color: rgba(127, 255, 0, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(127, 255, 0, 0.28),
+    0 16px 36px rgba(18, 17, 15, 0.45);
+}
+
 .terminal-window {
   padding: 1.25rem;
 }
