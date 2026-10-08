@@ -140,7 +140,6 @@ function App() {
                   key={cert.id}
                   item={{
                     ...cert,
-                    title: `${cert.organization}: ${cert.title}`,
                     icon: "ClipboardDocumentCheckIcon",
                   }}
                 />
