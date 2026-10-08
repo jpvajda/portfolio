@@ -74,4 +74,14 @@ export const certifications = [
     linkText: "View Certificate",
     path: "~/certifications/graphql-pro",
   },
+  {
+    id: 9,
+    title: "Pain Reprocessing Coaching",
+    organization: "Pain Reprocessing Therapy Center",
+    description:
+      "Evidence-based psychological treatment that changes the brain's response to pain signals.",
+    link: "https://www.linkedin.com/in/johnpvajda/overlay/Education/1269232600/treasury/?profileId=ACoAAADpXKQBgr-cM6S5vcfA2mzehmoMMhi36oo",
+    linkText: "View Certificate",
+    path: "~/certifications/prt-coaching",
+  },
 ];

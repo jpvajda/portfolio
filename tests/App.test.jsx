@@ -46,6 +46,23 @@ describe("App", () => {
     ).toBeInTheDocument();
   });
 
+  it("renders Pain Reprocessing Therapy certification", () => {
+    render(<App />);
+    expect(
+      screen.getByRole("article", {
+        name: /Pain Reprocessing Coaching/i,
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", {
+        name: /Pain Reprocessing Coaching/i,
+      })
+    ).toHaveAttribute(
+      "href",
+      "https://www.linkedin.com/in/johnpvajda/overlay/Education/1269232600/treasury/?profileId=ACoAAADpXKQBgr-cM6S5vcfA2mzehmoMMhi36oo"
+    );
+  });
+
   it("has skip to main content link", () => {
     render(<App />);
     const skipLink = screen.getByRole("link", {
