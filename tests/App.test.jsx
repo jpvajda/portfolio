@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import React from "react";
 import App from "../src/App";
 
@@ -44,6 +44,21 @@ describe("App", () => {
     expect(
       screen.getByRole("region", { name: /certifications/i })
     ).toBeInTheDocument();
+  });
+
+  it("renders newest certifications first", () => {
+    render(<App />);
+    const section = screen.getByRole("region", { name: /certifications/i });
+    const cards = within(section).getAllByRole("article");
+
+    expect(cards[0]).toHaveAccessibleName("AI Product Manager Foundations");
+    expect(cards[1]).toHaveAccessibleName("Pain Reprocessing Coaching");
+    expect(
+      screen.getByRole("link", { name: /AI Product Manager Foundations/i })
+    ).toHaveAttribute(
+      "href",
+      "https://lms.productfaculty.com/verify/john-vajda-48015"
+    );
   });
 
   it("renders Pain Reprocessing Therapy certification", () => {
