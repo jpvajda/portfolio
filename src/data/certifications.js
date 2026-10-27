@@ -3,6 +3,26 @@
 
 export const certifications = [
   {
+    id: 10,
+    title: "AI Product Manager Foundations",
+    organization: "Product Faculty",
+    description:
+      "AI product management foundations covering LLMs, impact mapping, orchestration, and memory design.",
+    link: "https://lms.productfaculty.com/verify/john-vajda-48015",
+    linkText: "View Certificate",
+    path: "~/certifications/ai-pm-foundations",
+  },
+  {
+    id: 9,
+    title: "Pain Reprocessing Coaching",
+    organization: "Pain Reprocessing Therapy Center",
+    description:
+      "Evidence-based psychological treatment that changes the brain's response to pain signals.",
+    link: "https://www.linkedin.com/in/johnpvajda/overlay/Education/1269232600/treasury/?profileId=ACoAAADpXKQBgr-cM6S5vcfA2mzehmoMMhi36oo",
+    linkText: "View Certificate",
+    path: "~/certifications/prt-coaching",
+  },
+  {
     id: 1,
     title: "Responsive Web Design",
     organization: "Free Code Camp",
@@ -73,15 +93,5 @@ export const certifications = [
     link: "https://www.apollographql.com/tutorials/certifications/e0aa779b-763a-4aeb-a8ff-44ebf139db79",
     linkText: "View Certificate",
     path: "~/certifications/graphql-pro",
-  },
-  {
-    id: 9,
-    title: "Pain Reprocessing Coaching",
-    organization: "Pain Reprocessing Therapy Center",
-    description:
-      "Evidence-based psychological treatment that changes the brain's response to pain signals.",
-    link: "https://www.linkedin.com/in/johnpvajda/overlay/Education/1269232600/treasury/?profileId=ACoAAADpXKQBgr-cM6S5vcfA2mzehmoMMhi36oo",
-    linkText: "View Certificate",
-    path: "~/certifications/prt-coaching",
   },
 ];
