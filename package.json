@@ -1,5 +1,5 @@
 {
-  "homepage": "https://jpvajda.github.io/portfolio",
+  "homepage": "https://johnpvajda.com",
   "name": "jpvajda-portfolio",
   "version": "0.4.0",
   "type": "module",
@@ -22,7 +22,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --cname johnpvajda.com"
   },
   "browserslist": {
     "production": [

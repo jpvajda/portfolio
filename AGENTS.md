@@ -13,7 +13,7 @@ This file defines rules and conventions for AI agents working on the portfolio r
  - Vite  7.3.1
 **Deployment:** GitHub Pages
 **Repository:** https://github.com/jpvajda/portfolio
-**Live Site:** https://jpvajda.github.io/portfolio
+**Live Site:** https://johnpvajda.com
 
 ## Primary Objectives
 
@@ -321,7 +321,7 @@ const fetchData = async () => {
 - Build output must go to `build/` directory
 - Keep `yarn deploy` command working
 - Test build before pushing: `yarn build`
-- Verify deployment: https://jpvajda.github.io/portfolio
+- Verify deployment: https://johnpvajda.com
 
 ### Pre-Deployment Checklist
 - [ ] All tests passing
