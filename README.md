@@ -2,7 +2,7 @@
 
 A modern, terminal-themed portfolio website showcasing Developer Experience, Product Led Growth, and Engineering Leadership expertise.
 
-**Live Site:** https://jpvajda.github.io/portfolio
+**Live Site:** https://johnpvajda.com
 
 ## 🚀 Quick Start
 
@@ -25,7 +25,7 @@ pnpm install
 pnpm dev
 ```
 
-Visit `http://localhost:3000/portfolio/` in your browser.
+Visit `http://localhost:3000/` in your browser.
 
 ## 🏗️ Architecture
 
@@ -112,7 +112,7 @@ pnpm deploy
 
 This runs `pnpm build` then `gh-pages -d dist` to deploy to GitHub Pages.
 
-> The `homepage` field in `package.json` must be set to `https://jpvajda.github.io/portfolio` for GitHub Pages to work correctly
+> The `homepage` field in `package.json` must be set to `https://johnpvajda.com` for the custom domain to work correctly. Deploy with `pnpm deploy` (includes `--cname johnpvajda.com`).
 
 ### GitHub Actions CI/CD
 

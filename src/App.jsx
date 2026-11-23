@@ -34,7 +34,7 @@ function App() {
           content="Portfolio showcasing Developer Relations, Product Led Growth, and Engineering Leadership expertise."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://jpvajda.github.io/portfolio" />
+        <meta property="og:url" content="https://johnpvajda.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -44,7 +44,7 @@ function App() {
           name="twitter:description"
           content="Portfolio showcasing Developer Relations, Product Led Growth, and Engineering Leadership expertise."
         />
-        <link rel="canonical" href="https://jpvajda.github.io/portfolio" />
+        <link rel="canonical" href="https://johnpvajda.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
           rel="stylesheet"
